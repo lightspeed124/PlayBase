@@ -31,7 +31,18 @@ export default function HomePage() {
           {/* Search Bar */}
           <HeroSearch />
 
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-indigo-200">
+          {/* Thumbtack-style escape hatch */}
+          <p className="mt-4 text-sm text-indigo-200">
+            Not sure what you need?{" "}
+            <Link
+              href="/plan"
+              className="text-white font-semibold underline underline-offset-2 hover:text-yellow-200 transition-colors"
+            >
+              Describe your event and get personalized picks →
+            </Link>
+          </p>
+
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-4 text-sm text-indigo-200">
             <span>✓ Free delivery included</span>
             <span>✓ Professional setup</span>
             <span>✓ Insured companies</span>
@@ -61,6 +72,27 @@ export default function HomePage() {
               )}
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* Get Matched Banner */}
+      <section className="max-w-7xl mx-auto px-4 pb-4">
+        <div className="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-3xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 text-white">
+          <div>
+            <div className="text-3xl mb-2">🎯</div>
+            <h2 className="text-2xl font-bold mb-1">Not sure what to book?</h2>
+            <p className="text-indigo-200 max-w-md">
+              Answer 4 quick questions about your event — kids, age, budget, theme — and we&apos;ll recommend exactly the right rentals for you.
+            </p>
+          </div>
+          <div className="shrink-0">
+            <Link
+              href="/plan"
+              className="inline-block bg-white text-indigo-700 font-bold px-8 py-4 rounded-2xl hover:bg-indigo-50 transition-colors text-base whitespace-nowrap"
+            >
+              Get Personalized Picks →
+            </Link>
+          </div>
         </div>
       </section>
 
