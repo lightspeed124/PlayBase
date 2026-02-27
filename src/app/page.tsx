@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { rentalItems, companies, categories, getCompanyById } from "@/lib/data";
 import ItemCard from "@/components/ItemCard";
+import HeroSearch from "@/components/HeroSearch";
 
 export default function HomePage() {
   const featuredItems = rentalItems.filter((i) => i.available).slice(0, 6);
@@ -28,45 +29,20 @@ export default function HomePage() {
           </p>
 
           {/* Search Bar */}
-          <div className="bg-white rounded-2xl shadow-xl p-4 max-w-3xl mx-auto">
-            <div className="flex flex-col md:flex-row gap-3">
-              <div className="flex-1 flex items-center gap-2 border border-gray-200 rounded-xl px-4 py-3">
-                <span className="text-gray-400 text-lg">📍</span>
-                <input
-                  type="text"
-                  placeholder="Enter your zip code or city"
-                  className="flex-1 outline-none text-gray-800 text-sm placeholder-gray-400"
-                />
-              </div>
-              <div className="flex-1 flex items-center gap-2 border border-gray-200 rounded-xl px-4 py-3">
-                <span className="text-gray-400 text-lg">📅</span>
-                <input
-                  type="date"
-                  className="flex-1 outline-none text-gray-800 text-sm bg-transparent"
-                />
-              </div>
-              <div className="flex-1 flex items-center gap-2 border border-gray-200 rounded-xl px-4 py-3">
-                <span className="text-gray-400 text-lg">🎪</span>
-                <select className="flex-1 outline-none text-gray-800 text-sm bg-transparent">
-                  <option value="">All categories</option>
-                  <option>Bounce Houses</option>
-                  <option>Water Slides</option>
-                  <option>Combos</option>
-                  <option>Obstacle Courses</option>
-                  <option>Concessions</option>
-                  <option>Tents</option>
-                </select>
-              </div>
-              <Link
-                href="/browse"
-                className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-xl text-sm transition-colors whitespace-nowrap"
-              >
-                Search
-              </Link>
-            </div>
-          </div>
+          <HeroSearch />
 
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-indigo-200">
+          {/* Thumbtack-style escape hatch */}
+          <p className="mt-4 text-sm text-indigo-200">
+            Not sure what you need?{" "}
+            <Link
+              href="/plan"
+              className="text-white font-semibold underline underline-offset-2 hover:text-yellow-200 transition-colors"
+            >
+              Describe your event and get personalized picks →
+            </Link>
+          </p>
+
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-4 text-sm text-indigo-200">
             <span>✓ Free delivery included</span>
             <span>✓ Professional setup</span>
             <span>✓ Insured companies</span>
@@ -96,6 +72,27 @@ export default function HomePage() {
               )}
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* Get Matched Banner */}
+      <section className="max-w-7xl mx-auto px-4 pb-4">
+        <div className="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-3xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 text-white">
+          <div>
+            <div className="text-3xl mb-2">🎯</div>
+            <h2 className="text-2xl font-bold mb-1">Not sure what to book?</h2>
+            <p className="text-indigo-200 max-w-md">
+              Answer 4 quick questions about your event — kids, age, budget, theme — and we&apos;ll recommend exactly the right rentals for you.
+            </p>
+          </div>
+          <div className="shrink-0">
+            <Link
+              href="/plan"
+              className="inline-block bg-white text-indigo-700 font-bold px-8 py-4 rounded-2xl hover:bg-indigo-50 transition-colors text-base whitespace-nowrap"
+            >
+              Get Personalized Picks →
+            </Link>
+          </div>
         </div>
       </section>
 
