@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { rentalItems, companies, categories, getCompanyById } from "@/lib/data";
 import ItemCard from "@/components/ItemCard";
+import HeroSearch from "@/components/HeroSearch";
 
 export default function HomePage() {
   const featuredItems = rentalItems.filter((i) => i.available).slice(0, 6);
@@ -28,43 +29,7 @@ export default function HomePage() {
           </p>
 
           {/* Search Bar */}
-          <div className="bg-white rounded-2xl shadow-xl p-4 max-w-3xl mx-auto">
-            <div className="flex flex-col md:flex-row gap-3">
-              <div className="flex-1 flex items-center gap-2 border border-gray-200 rounded-xl px-4 py-3">
-                <span className="text-gray-400 text-lg">📍</span>
-                <input
-                  type="text"
-                  placeholder="Enter your zip code or city"
-                  className="flex-1 outline-none text-gray-800 text-sm placeholder-gray-400"
-                />
-              </div>
-              <div className="flex-1 flex items-center gap-2 border border-gray-200 rounded-xl px-4 py-3">
-                <span className="text-gray-400 text-lg">📅</span>
-                <input
-                  type="date"
-                  className="flex-1 outline-none text-gray-800 text-sm bg-transparent"
-                />
-              </div>
-              <div className="flex-1 flex items-center gap-2 border border-gray-200 rounded-xl px-4 py-3">
-                <span className="text-gray-400 text-lg">🎪</span>
-                <select className="flex-1 outline-none text-gray-800 text-sm bg-transparent">
-                  <option value="">All categories</option>
-                  <option>Bounce Houses</option>
-                  <option>Water Slides</option>
-                  <option>Combos</option>
-                  <option>Obstacle Courses</option>
-                  <option>Concessions</option>
-                  <option>Tents</option>
-                </select>
-              </div>
-              <Link
-                href="/browse"
-                className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-xl text-sm transition-colors whitespace-nowrap"
-              >
-                Search
-              </Link>
-            </div>
-          </div>
+          <HeroSearch />
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-indigo-200">
             <span>✓ Free delivery included</span>

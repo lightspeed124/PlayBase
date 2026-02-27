@@ -625,6 +625,28 @@ export function searchItems(query: string): RentalItem[] {
   );
 }
 
+/**
+ * Returns companies whose serviceArea includes the given city/zip string.
+ * Matching is case-insensitive and checks if the input is contained in any
+ * service area entry (so "palo alto" matches "East Palo Alto" and "Palo Alto").
+ */
+export function getCompaniesByLocation(cityOrZip: string): Company[] {
+  const q = cityOrZip.toLowerCase().trim();
+  if (!q) return companies;
+  return companies.filter((c) =>
+    c.serviceArea.some((area) => area.toLowerCase().includes(q) || q.includes(area.toLowerCase()))
+  );
+}
+
+/**
+ * Returns items available in a given city/zip, limited to companies that
+ * serve that location.
+ */
+export function getItemsByLocation(cityOrZip: string): RentalItem[] {
+  const servingCompanies = getCompaniesByLocation(cityOrZip).map((c) => c.id);
+  return rentalItems.filter((i) => servingCompanies.includes(i.companyId));
+}
+
 export const categories = [
   { name: "Bounce Houses", icon: "🏰", count: rentalItems.filter((i) => i.category === "Bounce Houses").length },
   { name: "Water Slides", icon: "💦", count: rentalItems.filter((i) => i.category === "Water Slides").length },
