@@ -1005,6 +1005,315 @@ export const rentalItems: RentalItem[] = [
     colors: ["Red", "Pink", "White"],
   },
 
+  // ─── BAY AREA BOUNCE (additional) ─────────────────────────────────────────
+
+  {
+    id: "bab-toddler-bounce",
+    companyId: "bay-area-bounce",
+    name: "Toddler Bounce House",
+    slug: "toddler-bounce-house-bab",
+    category: "Bounce Houses",
+    themes: ["Toddler", "Animals", "Farm", "Fun"],
+    description:
+      "Designed just for little ones! This compact, low-profile toddler bounce house features bright farm animal graphics, soft interior walls, and a gentle bounce surface safe for children ages 1–5. Lower walls mean easy visibility for supervising adults. The perfect centerpiece for a toddler birthday party.",
+    dimensions: "12ft x 12ft x 8ft",
+    capacity: 6,
+    ageRange: "1–5 years",
+    setupTime: 20,
+    price: 159,
+    images: [
+      "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Toddler-safe low walls",
+      "Soft interior padding",
+      "Farm animal themed artwork",
+      "Easy adult supervision design",
+      "Cleaned & sanitized before every rental",
+    ],
+    safetyNotes:
+      "For ages 1–5 only. No children over 5. Always have an adult within arm's reach.",
+    colors: ["Yellow", "Green", "Red"],
+  },
+
+  {
+    id: "bab-pirate-ship",
+    companyId: "bay-area-bounce",
+    name: "Pirate Ship Bounce House",
+    slug: "pirate-ship-bounce-house",
+    category: "Bounce Houses",
+    themes: ["Pirate", "Adventure", "Ocean", "Treasure"],
+    description:
+      "Ahoy, mateys! This swashbuckling Pirate Ship bounce house is a showstopper at any party. The ship-shaped inflatable features pirate graphics, cannons, and ocean waves. Includes a large bounce area, safety netting on all sides, and an interior basketball hoop. Perfect for adventurous kids who dream of sailing the seven seas!",
+    dimensions: "18ft x 15ft x 14ft",
+    capacity: 8,
+    ageRange: "3–14 years",
+    setupTime: 35,
+    price: 199,
+    images: [
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Pirate ship themed design",
+      "Interior basketball hoop",
+      "Safety netting on all sides",
+      "Easy entry ramp",
+      "Cleaned & sanitized before every rental",
+    ],
+    safetyNotes: "Max 8 children. No rough play. Remove shoes before entering.",
+    colors: ["Brown", "Black", "Blue"],
+  },
+
+  {
+    id: "bab-tropical-water-slide",
+    companyId: "bay-area-bounce",
+    name: "Tropical Water Slide (18ft)",
+    slug: "tropical-water-slide-18ft",
+    category: "Water Slides",
+    themes: ["Tropical", "Beach", "Summer", "Luau"],
+    description:
+      "Bring the beach to your backyard with this 18-foot tropical water slide! Kids climb the safety-handle ladder and plunge down into the splash pool at the bottom. Decorated with tropical palms and vibrant colors. Connects to a standard garden hose. A must-have for summer birthday parties in the South Bay.",
+    dimensions: "18ft tall x 10ft wide x 20ft long",
+    capacity: 1,
+    ageRange: "5–17 years",
+    setupTime: 45,
+    price: 379,
+    images: [
+      "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "18ft tall single-lane slide",
+      "Built-in splash pool",
+      "Safety climbing handles",
+      "Tropical themed artwork",
+      "Connects to garden hose",
+      "Cleaned & sanitized before every rental",
+    ],
+    safetyNotes:
+      "One rider at a time. Children under 5 not permitted. Must be able to exit splash pool unassisted.",
+    colors: ["Green", "Yellow", "Blue"],
+  },
+
+  {
+    id: "bab-wet-dry-combo",
+    companyId: "bay-area-bounce",
+    name: "Adventure Wet/Dry Combo",
+    slug: "adventure-wet-dry-combo",
+    category: "Combos",
+    themes: ["Adventure", "Summer", "Water Park", "Sports"],
+    description:
+      "The ultimate summer combo! This 4-in-1 unit works both wet (water slide mode) and dry (standard bounce mode). Features a bounce area, climbing wall, obstacle section, and a large slide with a splash pool. Switch between wet and dry modes depending on the weather. The perfect all-in-one party solution.",
+    dimensions: "22ft x 16ft x 14ft",
+    capacity: 8,
+    ageRange: "3–14 years",
+    setupTime: 50,
+    price: 369,
+    images: [
+      "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Works wet or dry",
+      "4-in-1 activities",
+      "Large splash pool (wet mode)",
+      "Climbing wall",
+      "Obstacle section",
+      "Cleaned & sanitized before every rental",
+    ],
+    safetyNotes:
+      "In wet mode: one rider at a time on slide. Ages 3+ only. Adult supervision required at all times.",
+    colors: ["Blue", "Green", "Red"],
+  },
+
+  {
+    id: "bab-dunk-tank",
+    companyId: "bay-area-bounce",
+    name: "Dunk Tank",
+    slug: "dunk-tank-bab",
+    category: "Games",
+    themes: ["Games", "Carnival", "Competition", "Summer", "Corporate"],
+    description:
+      "The crowd favorite at any event! Our 500-gallon dunk tank delivers big laughs and big splashes. Dare your boss, teacher, or friends to sit in the hot seat — then let the balls fly! Includes 3 throwing balls. A hit at school carnivals, company picnics, and block parties. Requires 8ft width and 20ft throwing area.",
+    dimensions: "8ft wide x 7ft tall (20ft throwing area)",
+    capacity: 1,
+    ageRange: "All ages",
+    setupTime: 30,
+    price: 469,
+    images: [
+      "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "500-gallon water tank",
+      "3 throwing balls included",
+      "Easy fill & drain valve",
+      "Powder-coated steel frame",
+      "Cleaned & sanitized before every rental",
+    ],
+    safetyNotes:
+      "Person in seat must be a strong swimmer or wear flotation device. Seat weight limit 250 lbs. Supervise young children near open water.",
+    colors: ["Blue", "White"],
+  },
+
+  {
+    id: "bab-snow-cone-machine",
+    companyId: "bay-area-bounce",
+    name: "Snow Cone Machine",
+    slug: "snow-cone-machine-bab",
+    category: "Concessions",
+    themes: ["Concessions", "Food", "Carnival", "Summer"],
+    description:
+      "Keep guests cool with freshly shaved snow cones! Our commercial-grade snow cone machine comes with 50 servings of flavored syrups in assorted flavors: cherry, grape, blue raspberry, watermelon, and lemon-lime. Easy to operate and a huge hit on hot summer days. Great add-on with any bounce house or water slide rental.",
+    dimensions: "18in x 18in x 36in",
+    capacity: 0,
+    ageRange: "All ages",
+    setupTime: 10,
+    price: 69,
+    images: [
+      "https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Commercial-grade shaved ice machine",
+      "50 servings included",
+      "5 assorted flavors",
+      "Cups and spoon-straws included",
+      "Cleaned before rental",
+    ],
+    safetyNotes:
+      "Keep machine away from water and flammable materials. Adult operation recommended. Blade is sharp — keep children away from the ice chamber.",
+    colors: ["Red", "White"],
+  },
+
+  {
+    id: "bab-popcorn-machine",
+    companyId: "bay-area-bounce",
+    name: "Popcorn Machine",
+    slug: "popcorn-machine-bab",
+    category: "Concessions",
+    themes: ["Concessions", "Food", "Carnival", "Snacks"],
+    description:
+      "Add the smell and taste of fresh popcorn to your event! Our commercial-grade 8oz kettle popcorn machine makes delicious, buttery popcorn in minutes. Comes with 50 servings of all-in-one popcorn kits (kernels, oil, and seasoning pre-packaged). Plug in and serve within 5 minutes. Pairs great with a dunk tank or cotton candy machine.",
+    dimensions: "24in x 18in x 48in",
+    capacity: 0,
+    ageRange: "All ages",
+    setupTime: 10,
+    price: 79,
+    images: [
+      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Commercial-grade 8oz kettle",
+      "50 servings included",
+      "Bags included",
+      "Easy plug-and-go operation",
+      "Cleaned before rental",
+    ],
+    safetyNotes:
+      "Keep away from flammable materials. Kettle becomes very hot — adult operation only. Do not leave unattended.",
+    colors: ["Red", "Chrome"],
+  },
+
+  {
+    id: "bab-tent-10x10",
+    companyId: "bay-area-bounce",
+    name: "10x10 Pop Up Tent",
+    slug: "10x10-pop-up-tent-bab",
+    category: "Tents",
+    themes: ["Shade", "Outdoor", "Events"],
+    description:
+      "Keep guests comfortable in the shade with this quick-setup 10x10 pop-up canopy tent. Commercial-grade frame with white canopy top. Sets up in minutes without any tools. Great for individual vendor booths, food stations, or shaded rest areas. Can be combined with sidewalls for added wind and sun protection.",
+    dimensions: "10ft x 10ft",
+    capacity: 10,
+    ageRange: "All ages",
+    setupTime: 15,
+    price: 89,
+    images: [
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Commercial-grade frame",
+      "White canopy top",
+      "Quick pop-up setup",
+      "Stake and weight compatible",
+    ],
+    safetyNotes:
+      "Do not use in winds over 25mph. Must be staked or weighted on all corners.",
+    colors: ["White"],
+  },
+
+  {
+    id: "bab-tent-20x20",
+    companyId: "bay-area-bounce",
+    name: "20x20 Canopy Tent",
+    slug: "20x20-canopy-tent-bab",
+    category: "Tents",
+    themes: ["Shade", "Outdoor", "Events", "Party"],
+    description:
+      "Provide shade and shelter for up to 40 guests with this spacious 20x20 canopy tent. Perfect for backyard parties, outdoor receptions, school events, and corporate gatherings. Commercial-grade frame with white canopy top. Sidewalls available upon request for additional wind and sun protection.",
+    dimensions: "20ft x 20ft",
+    capacity: 40,
+    ageRange: "All ages",
+    setupTime: 45,
+    price: 199,
+    images: [
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Commercial-grade frame",
+      "White canopy top",
+      "Fits up to 40 people",
+      "Sidewalls available",
+    ],
+    safetyNotes:
+      "Do not use in winds over 25mph. Must be staked or weighted on all corners.",
+    colors: ["White"],
+  },
+
+  {
+    id: "bab-tables-chairs",
+    companyId: "bay-area-bounce",
+    name: "Tables & Chairs Package (8 Tables / 64 Chairs)",
+    slug: "tables-chairs-package-bab",
+    category: "Tables & Chairs",
+    themes: ["Events", "Party", "Seating"],
+    description:
+      "Everything you need to seat your guests! This package includes 8 folding 6-foot rectangular tables and 64 matching folding chairs — perfect for parties up to 64 people. Tables seat 8 comfortably. Chairs are sturdy white plastic folding chairs. Bundle with a tent for the complete outdoor setup. Contact us for custom quantities.",
+    dimensions: "6ft tables, standard chairs",
+    capacity: 64,
+    ageRange: "All ages",
+    setupTime: 30,
+    price: 139,
+    images: [
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "8 folding tables (6ft)",
+      "64 folding chairs",
+      "White chairs",
+      "Clean and inspected",
+    ],
+    safetyNotes: "Max weight per chair 250 lbs. Do not stand on tables or chairs.",
+    colors: ["White"],
+  },
+
   // ─── ASTRO JUMP NORTH BAY ──────────────────────────────────────────────────
 
   {
@@ -1288,6 +1597,288 @@ export const rentalItems: RentalItem[] = [
     safetyNotes:
       "For ages 2–8 only. Always have an adult supervising nearby.",
     colors: ["Red", "Yellow", "Blue"],
+  },
+
+  // ─── ASTRO JUMP NORTH BAY (additional) ────────────────────────────────────
+
+  {
+    id: "astro-pirates-combo",
+    companyId: "astro-jump-north-bay",
+    name: "Pirate Ship Adventure Combo",
+    slug: "pirate-ship-adventure-combo",
+    category: "Combos",
+    themes: ["Pirate", "Adventure", "Ocean", "Treasure"],
+    description:
+      "Set sail for adventure with this massive Pirate Ship Combo! One of Astro Jump's most beloved units, featuring a bounce area shaped like a pirate ship, climbing wall, two slides, and obstacle zone. Spectacular pirate and ocean graphics throughout. Available throughout Marin, Sonoma, and San Francisco — full setup included in delivery.",
+    dimensions: "22ft x 16ft x 16ft",
+    capacity: 10,
+    ageRange: "3–14 years",
+    setupTime: 50,
+    price: 339,
+    images: [
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Pirate ship themed design",
+      "Dual slides",
+      "Climbing wall",
+      "Obstacle zone",
+      "Delivery and setup included",
+    ],
+    safetyNotes:
+      "One person on slide at a time. Max 10 children. No rough play.",
+    colors: ["Brown", "Black", "Blue"],
+  },
+
+  {
+    id: "astro-teen-giant-water-slide",
+    companyId: "astro-jump-north-bay",
+    name: "Giant Water Slide (20ft)",
+    slug: "giant-water-slide-20ft-astro",
+    category: "Water Slides",
+    themes: ["Summer", "Water Park", "Extreme", "Beach"],
+    description:
+      "Take summer to the next level with this 20-foot giant water slide! A single-lane straight drop delivers serious speed right into the splash pool below. Safety handles all the way up and a wide launching platform at the top. Connects to a standard garden hose. Serving Marin, Sonoma, and San Francisco — delivery and full setup included.",
+    dimensions: "20ft tall x 10ft wide x 24ft long",
+    capacity: 1,
+    ageRange: "6–17 years",
+    setupTime: 45,
+    price: 349,
+    images: [
+      "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "20ft single-lane slide",
+      "Large splash pool",
+      "Safety handles throughout",
+      "Wide launch platform",
+      "Connects to garden hose",
+      "Delivery and setup included",
+    ],
+    safetyNotes:
+      "Ages 6+ only. Must be at least 46\" tall. One rider at a time. No diving.",
+    colors: ["Blue", "Green", "Yellow"],
+  },
+
+  {
+    id: "astro-obstacle-course",
+    companyId: "astro-jump-north-bay",
+    name: "Obstacle Course (35ft)",
+    slug: "obstacle-course-35ft-astro",
+    category: "Obstacle Courses",
+    themes: ["Adventure", "Sports", "Challenge", "Competition"],
+    description:
+      "Get the competitive energy flowing with this 35-foot inflatable obstacle course! Packed with crawl tunnels, pop-up pillars, climbing walls, and a slide finish. Two side-by-side lanes allow head-to-head racing. A crowd favorite at birthday parties, school carnivals, and community events throughout Marin and Sonoma County. Setup included.",
+    dimensions: "35ft x 12ft x 12ft",
+    capacity: 4,
+    ageRange: "5–17 years",
+    setupTime: 55,
+    price: 419,
+    images: [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "35ft dual-lane racing course",
+      "Crawl tunnels",
+      "Pop-up obstacles",
+      "Climbing walls",
+      "Slide finish",
+      "Delivery and setup included",
+    ],
+    safetyNotes:
+      "No pushing inside the course. Remove shoes before entering. Ages 5+ only.",
+    colors: ["Blue", "Red", "Yellow"],
+  },
+
+  {
+    id: "astro-dunk-tank",
+    companyId: "astro-jump-north-bay",
+    name: "Dunk Tank",
+    slug: "dunk-tank-astro",
+    category: "Games",
+    themes: ["Games", "Carnival", "Competition", "Summer"],
+    description:
+      "The classic party crowd-pleaser! Our heavy-duty 500-gallon dunk tank brings the laughs to any event. Sit on the dunk seat and challenge friends to knock you in! Includes 3 throwing balls and easy fill/drain operation. Great for school carnivals, company picnics, and block parties across Marin, Sonoma, and San Francisco.",
+    dimensions: "8ft wide x 7ft tall (20ft throwing area needed)",
+    capacity: 1,
+    ageRange: "All ages",
+    setupTime: 30,
+    price: 499,
+    images: [
+      "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "500-gallon water tank",
+      "3 throwing balls included",
+      "Easy fill & drain",
+      "Powder-coated steel frame",
+      "Delivery and setup included",
+    ],
+    safetyNotes:
+      "Person in seat must be a confident swimmer. Seat weight limit 250 lbs. Always supervise children near open water.",
+    colors: ["Blue", "White"],
+  },
+
+  {
+    id: "astro-snow-cone",
+    companyId: "astro-jump-north-bay",
+    name: "Snow Cone Machine",
+    slug: "snow-cone-machine-astro",
+    category: "Concessions",
+    themes: ["Concessions", "Food", "Carnival", "Summer"],
+    description:
+      "A perfect add-on for any summer party! Our commercial snow cone machine shaves ice into fluffy, light cones in seconds. Comes with 50 servings of syrups in cherry, grape, blue raspberry, and watermelon flavors — cups and spoon-straws included. Pairs beautifully with any bounce house or water slide rental.",
+    dimensions: "18in x 18in x 36in",
+    capacity: 0,
+    ageRange: "All ages",
+    setupTime: 10,
+    price: 75,
+    images: [
+      "https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Commercial-grade shaved ice machine",
+      "50 servings included",
+      "4 assorted flavors",
+      "Cups and spoon-straws included",
+      "Delivery included",
+    ],
+    safetyNotes:
+      "Adult operation only. Keep away from children — internal blade is sharp. Do not use near water.",
+    colors: ["Red", "White"],
+  },
+
+  {
+    id: "astro-popcorn",
+    companyId: "astro-jump-north-bay",
+    name: "Popcorn Machine",
+    slug: "popcorn-machine-astro",
+    category: "Concessions",
+    themes: ["Concessions", "Food", "Carnival", "Snacks"],
+    description:
+      "Add the smell of fresh popcorn to your next event! Our commercial-grade 8oz kettle popcorn machine pops up to 25 cups per batch and is ready to serve in minutes. Comes with 50 pre-measured all-in-one popcorn kits — just pour and pop! Easy plug-and-go operation. Popular add-on for birthday parties and school events throughout the North Bay.",
+    dimensions: "24in x 18in x 48in",
+    capacity: 0,
+    ageRange: "All ages",
+    setupTime: 10,
+    price: 79,
+    images: [
+      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Commercial-grade 8oz kettle",
+      "50 servings included",
+      "Bags included",
+      "Easy plug-and-go operation",
+      "Delivery included",
+    ],
+    safetyNotes:
+      "Kettle reaches high temperatures — adult operation only. Keep children away from the kettle. Do not leave unattended while in use.",
+    colors: ["Red", "Chrome"],
+  },
+
+  {
+    id: "astro-tent-20x20",
+    companyId: "astro-jump-north-bay",
+    name: "20x20 Party Tent",
+    slug: "20x20-party-tent-astro",
+    category: "Tents",
+    themes: ["Shade", "Outdoor", "Events"],
+    description:
+      "Keep guests comfortable and shaded with this large 20x20 party tent. Commercial-grade frame with white canopy top — fits up to 40 guests comfortably. Perfect for outdoor birthday parties, community events, and gatherings across Marin and Sonoma County. Delivery and setup included. Sidewalls available as an add-on.",
+    dimensions: "20ft x 20ft",
+    capacity: 40,
+    ageRange: "All ages",
+    setupTime: 45,
+    price: 209,
+    images: [
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Commercial-grade frame",
+      "White canopy top",
+      "Fits up to 40 guests",
+      "Sidewalls available",
+      "Delivery and setup included",
+    ],
+    safetyNotes:
+      "Do not use in winds over 25mph. Must be staked or weighted on all corners.",
+    colors: ["White"],
+  },
+
+  {
+    id: "astro-tent-10x10",
+    companyId: "astro-jump-north-bay",
+    name: "10x10 Pop Up Tent",
+    slug: "10x10-pop-up-tent-astro",
+    category: "Tents",
+    themes: ["Shade", "Outdoor", "Events"],
+    description:
+      "Add a shaded spot to any outdoor event with this quick-setup 10x10 pop-up canopy. Commercial-grade aluminum frame with white top. Sets up in minutes without tools. Great for food stations, vendor booths, or seating areas at backyard parties. Available throughout the North Bay area with delivery included.",
+    dimensions: "10ft x 10ft",
+    capacity: 10,
+    ageRange: "All ages",
+    setupTime: 15,
+    price: 95,
+    images: [
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Commercial-grade aluminum frame",
+      "White canopy top",
+      "Quick pop-up setup",
+      "Stake and weight compatible",
+      "Delivery included",
+    ],
+    safetyNotes:
+      "Do not use in winds over 25mph. Must be staked or weighted on all corners.",
+    colors: ["White"],
+  },
+
+  {
+    id: "astro-tables-chairs",
+    companyId: "astro-jump-north-bay",
+    name: "Tables & Chairs Package (8 Tables / 64 Chairs)",
+    slug: "tables-chairs-package-astro",
+    category: "Tables & Chairs",
+    themes: ["Events", "Party", "Seating"],
+    description:
+      "Complete your outdoor event setup with this 8-table, 64-chair package. Includes 8 folding 6-foot rectangular tables and 64 sturdy white folding chairs. Seats up to 64 guests comfortably — perfect for birthday parties, community events, and family gatherings in Marin and Sonoma County. Bundle with a tent for the perfect outdoor setup. Delivery and pickup included.",
+    dimensions: "6ft tables, standard chairs",
+    capacity: 64,
+    ageRange: "All ages",
+    setupTime: 30,
+    price: 149,
+    images: [
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "8 folding tables (6ft)",
+      "64 folding chairs",
+      "White chairs",
+      "Clean and inspected",
+      "Delivery and pickup included",
+    ],
+    safetyNotes: "Max weight per chair 250 lbs. Do not stand on tables or chairs.",
+    colors: ["White"],
   },
 ];
 
