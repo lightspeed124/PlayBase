@@ -7,7 +7,7 @@ export const companies: Company[] = [
     slug: "kidzz-star-jumpers",
     logo: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=200&h=200&fit=crop",
     description:
-      "Family-owned and operated for 27 years, Kidzz Star Jumpers provides high-quality, clean, and sanitized inflatables and party equipment across the Bay Area. From small backyard birthday parties to large corporate events, we handle every event with the utmost care.",
+      "Family-owned and operated for 27 years, Kidzz Star Jumpers provides high-quality, clean, and sanitized inflatables and party equipment across the Bay Area. From small backyard birthday parties to large corporate events, we handle every event with the utmost care. We serve San Mateo, San Francisco, Santa Clara, and Alameda Counties.",
     yearsInBusiness: 27,
     rating: 4.9,
     reviewCount: 342,
@@ -29,7 +29,7 @@ export const companies: Company[] = [
       "Daly City",
       "San Francisco",
     ],
-    phone: "(650) 555-0100",
+    phone: "(650) 814-4499",
     email: "info@kidzzstarjumpers.com",
     website: "https://kidzzstarjumpers.com",
     verified: true,
@@ -41,7 +41,7 @@ export const companies: Company[] = [
     slug: "bay-area-bounce",
     logo: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?w=200&h=200&fit=crop",
     description:
-      "Premium bounce house and party rental company serving the greater San Francisco Bay Area. We pride ourselves on fast delivery, professional setup, and spotless equipment.",
+      "Premium bounce house and party rental company serving the greater South Bay. We pride ourselves on fast delivery, professional setup, and spotless equipment. Every unit is thoroughly cleaned and inspected before each rental.",
     yearsInBusiness: 12,
     rating: 4.7,
     reviewCount: 189,
@@ -69,23 +69,26 @@ export const companies: Company[] = [
     slug: "astro-jump-north-bay",
     logo: "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=200&h=200&fit=crop",
     description:
-      "Serving Marin, Sonoma, and Napa counties with top-of-the-line inflatable rentals, water slides, and party equipment. Over 15 years of making events unforgettable.",
-    yearsInBusiness: 15,
+      "For nearly 35 years, Astro Jump® of the North Bay has been San Francisco and Marin's favorite source for backyard fun — renting inflatable bounce houses, obstacle courses, waterslides, and more. We deliver to Marin, Sonoma, and San Francisco with full setup included. Located at 47 Paul Dr, Bldg 9, San Rafael, CA 94903.",
+    yearsInBusiness: 35,
     rating: 4.8,
     reviewCount: 214,
-    location: "Santa Rosa, CA",
+    location: "San Rafael, CA",
     serviceArea: [
+      "San Rafael",
       "Santa Rosa",
       "Petaluma",
       "Novato",
-      "San Rafael",
       "Mill Valley",
       "Napa",
       "Sonoma",
       "Fairfax",
       "Corte Madera",
+      "San Francisco",
+      "Sausalito",
+      "Tiburon",
     ],
-    phone: "(707) 555-0300",
+    phone: "(415) 499-0955",
     email: "info@astrojumpnorthbay.com",
     website: "https://astrojump.com/northbay",
     verified: true,
@@ -94,7 +97,8 @@ export const companies: Company[] = [
 ];
 
 export const rentalItems: RentalItem[] = [
-  // --- KIDZZ STAR JUMPERS ---
+  // ─── KIDZZ STAR JUMPERS ────────────────────────────────────────────────────
+
   {
     id: "razzle-dazzle-castle",
     companyId: "kidzz-star-jumpers",
@@ -103,8 +107,8 @@ export const rentalItems: RentalItem[] = [
     category: "Bounce Houses",
     themes: ["Princess", "Castle", "Fantasy"],
     description:
-      "A stunning castle-themed bounce house decorated with colorful towers and fun graphics. Perfect for birthday parties and backyard events. Features a large bouncing area, safety netting on all sides, and easy-access entry ramp. Our most popular rental for princess-themed parties!",
-    dimensions: "15ft x 15ft x 12ft",
+      "A stunning castle-themed bounce house decorated with colorful towers and fun graphics. Features a large bouncing area, safety netting on all sides, easy-access entry ramp, and a basketball hoop inside. Our most popular rental for princess-themed parties! Cleaned and sanitized before every rental.",
+    dimensions: "15ft x 15ft x 14ft",
     capacity: 6,
     ageRange: "2–12 years",
     setupTime: 30,
@@ -117,6 +121,7 @@ export const rentalItems: RentalItem[] = [
     features: [
       "Safety netting on all sides",
       "Easy-access entry ramp",
+      "Interior basketball hoop",
       "Anchor stakes included",
       "Cleaned & sanitized before every rental",
     ],
@@ -124,6 +129,99 @@ export const rentalItems: RentalItem[] = [
       "Maximum 5–6 kids of equal size. Adult supervision required at all times. Not suitable for adults.",
     colors: ["Pink", "Purple", "Yellow"],
   },
+
+  {
+    id: "castle-jumper-basic",
+    companyId: "kidzz-star-jumpers",
+    name: "Castle Jumper",
+    slug: "castle-jumper",
+    category: "Bounce Houses",
+    themes: ["Castle", "Fantasy", "Adventure"],
+    description:
+      "Classic castle-themed bounce house — a reliable crowd-pleaser at any party. Features a spacious bounce area, safety netting on all four sides, and a built-in basketball hoop. Perfect for birthday parties, school events, and backyard celebrations. Great value for a traditional bounce house experience.",
+    dimensions: "13ft x 13ft x 14ft",
+    capacity: 6,
+    ageRange: "2–12 years",
+    setupTime: 25,
+    price: 165,
+    images: [
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Safety netting on all sides",
+      "Interior basketball hoop",
+      "Easy entry ramp",
+      "Cleaned & sanitized before every rental",
+    ],
+    safetyNotes:
+      "Maximum 5–6 kids of equal size. Adult supervision required at all times.",
+    colors: ["Pink", "Blue", "Yellow"],
+  },
+
+  {
+    id: "castle-toddler",
+    companyId: "kidzz-star-jumpers",
+    name: "Castle Toddler Bounce House",
+    slug: "castle-toddler-bounce-house",
+    category: "Bounce Houses",
+    themes: ["Castle", "Toddler", "Fun"],
+    description:
+      "Specially designed for the littlest bouncers! This compact toddler-safe bounce house has lower walls, soft interior padding, and a gentle bounce surface — ideal for ages 1–5. Perfect for toddler birthday parties or playgroups. Features include a safety ball pit area inside and easy visibility for supervising adults.",
+    dimensions: "12ft x 12ft x 8ft",
+    capacity: 6,
+    ageRange: "1–5 years",
+    setupTime: 20,
+    price: 149,
+    images: [
+      "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Toddler-safe low walls",
+      "Soft interior padding",
+      "Built-in ball pit area",
+      "Easy adult supervision design",
+      "Cleaned & sanitized before every rental",
+    ],
+    safetyNotes:
+      "For ages 1–5 only. No children over 5. Always have an adult within arm's reach.",
+    colors: ["Yellow", "Red", "Blue"],
+  },
+
+  {
+    id: "disney-princess-large",
+    companyId: "kidzz-star-jumpers",
+    name: "Disney Princess 2-Jump (Large)",
+    slug: "disney-princess-2-jump-large",
+    category: "Bounce Houses",
+    themes: ["Disney", "Princess", "Cinderella", "Ariel", "Belle"],
+    description:
+      "An extra-large bounce house with two separate bouncing chambers featuring full-color artwork of Cinderella, Ariel, Belle, Rapunzel, and more. The dual chambers allow kids of different ages to bounce safely. A dream come true for any little princess — this is our largest bounce house.",
+    dimensions: "22ft x 15ft x 14ft",
+    capacity: 12,
+    ageRange: "2–12 years",
+    setupTime: 45,
+    price: 299,
+    images: [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1597484661643-2f5fef640dd1?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Disney Princess themed artwork",
+      "Dual bouncing chambers",
+      "Large interior headroom (14ft)",
+      "Integrated safety netting",
+      "Cleaned & sanitized before every rental",
+    ],
+    safetyNotes:
+      "Separate chambers for younger (2–5) and older (6–12) children recommended.",
+    colors: ["Pink", "Blue", "Gold"],
+  },
+
   {
     id: "razzle-dazzle-4in1",
     companyId: "kidzz-star-jumpers",
@@ -163,64 +261,47 @@ export const rentalItems: RentalItem[] = [
       "One person on the slide at a time. Maximum weight per climber 150 lbs.",
     colors: ["Multi-color", "Pink", "Purple"],
   },
+
   {
-    id: "disney-princess-large",
+    id: "razzle-dazzle-4in1-wet",
     companyId: "kidzz-star-jumpers",
-    name: "Disney Princess 2-Jump (Large)",
-    slug: "disney-princess-2-jump-large",
-    category: "Bounce Houses",
-    themes: ["Disney", "Princess", "Cinderella", "Ariel", "Belle"],
-    description:
-      "An extra-large officially licensed Disney Princess bounce house with two separate bouncing chambers. Features full-color artwork of Cinderella, Ariel, Belle, Rapunzel, and more. A dream come true for any little princess. The dual chambers allow kids of different ages to bounce safely.",
-    dimensions: "22ft x 15ft x 14ft",
-    capacity: 12,
-    ageRange: "2–12 years",
-    setupTime: 45,
-    price: 299,
-    images: [
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+    name: "Razzle Dazzle 4-in-1 Combo (Wet)",
+    slug: "razzle-dazzle-4in1-combo-wet",
+    category: "Water Slides",
+    themes: [
+      "Princess",
+      "Frozen",
+      "Moana",
+      "Disney",
+      "Tropical",
+      "Summer",
+      "Unicorn",
     ],
-    available: true,
-    features: [
-      "Officially licensed Disney artwork",
-      "Dual bouncing chambers",
-      "Large interior headroom (14ft)",
-      "Integrated safety features",
-    ],
-    safetyNotes:
-      "Separate chambers for younger (2–5) and older (6–12) children recommended.",
-    colors: ["Pink", "Blue", "Gold"],
-  },
-  {
-    id: "castle-toddler",
-    companyId: "kidzz-star-jumpers",
-    name: "Castle Toddler Bounce House",
-    slug: "castle-toddler-bounce-house",
-    category: "Bounce Houses",
-    themes: ["Castle", "Toddler", "Fun"],
     description:
-      "Specially designed for the littlest bouncers! This compact toddler-safe bounce house has lower walls, soft interior padding, and gentle bounce surface — ideal for ages 1–5. Perfect for toddler birthday parties or playgroups. Features include a safety ball pit area inside.",
-    dimensions: "12ft x 12ft x 8ft",
+      "Beat the heat with the water version of our beloved Razzle Dazzle 4-in-1 Combo! Features a wet slip-and-slide section in addition to the bounce area, climbing wall, and obstacle course. Includes interchangeable themed banners — Disney Princess, Frozen, Moana, Sofia the 1st, Little Mermaid, and more. Requires a water hose connection.",
+    dimensions: "20ft x 15ft x 14ft",
     capacity: 6,
-    ageRange: "1–5 years",
-    setupTime: 20,
-    price: 139,
+    ageRange: "3–14 years",
+    setupTime: 50,
+    price: 329,
     images: [
-      "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
     ],
     available: true,
     features: [
-      "Toddler-safe low walls",
-      "Soft interior padding",
-      "Built-in ball pit area",
-      "Easy adult supervision design",
+      "Wet & dry play modes",
+      "Interchangeable themed banners",
+      "Slip-and-slide section",
+      "Additional tie-down straps",
+      "Safety handles throughout",
+      "Connects to standard garden hose",
     ],
     safetyNotes:
-      "For ages 1–5 only. No children over 5. Always have an adult within arm's reach.",
-    colors: ["Yellow", "Red", "Blue"],
+      "One person on the slide at a time. Ages 3+ only. Wet surface — use caution when climbing.",
+    colors: ["Multi-color", "Pink", "Blue"],
   },
+
   {
     id: "module-5in1-combo",
     companyId: "kidzz-star-jumpers",
@@ -246,40 +327,108 @@ export const rentalItems: RentalItem[] = [
       "Interior basketball hoop",
       "Climbing wall",
       "Obstacle section",
+      "Cleaned & sanitized before every rental",
     ],
     safetyNotes:
       "One child at a time on slides. No flipping or rough play. Adult supervision required.",
     colors: ["Blue", "Red", "Yellow", "Green"],
   },
+
   {
-    id: "tropical-water-slide",
+    id: "big-kahuna-slide-wet",
     companyId: "kidzz-star-jumpers",
-    name: "Tropical Water Slide",
-    slug: "tropical-water-slide",
+    name: "The Big Kahuna Slide (Wet)",
+    slug: "big-kahuna-slide-wet",
     category: "Water Slides",
     themes: ["Tropical", "Beach", "Summer", "Luau"],
     description:
-      "Beat the heat with this towering 18-foot tropical water slide! Features a massive splash pool at the base, climbing ladder with safety handles, and a fast, thrilling slide. Decorated with palm trees and tropical colors. Requires a water hose connection. Perfect for summer parties.",
-    dimensions: "18ft tall x 10ft wide x 20ft long",
+      "Towering single-lane water slide — one of the most thrilling rides we offer! Kids climb up the safety-handle ladder and plunge down into the splash pool at the base. Decorated with tropical colors and graphics. Requires a garden hose connection to keep the surface wet and fast. A total showstopper at any summer party.",
+    dimensions: "18ft tall x 10ft wide x 22ft long",
     capacity: 1,
     ageRange: "5–17 years",
     setupTime: 45,
-    price: 329,
+    price: 389,
     images: [
       "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
     ],
     available: true,
     features: [
-      "18ft tall slide",
+      "18ft tall single-lane slide",
       "Built-in splash pool",
       "Safety climbing handles",
+      "Additional tie-down straps",
       "Connects to standard garden hose",
+      "Cleaned & sanitized before every rental",
     ],
     safetyNotes:
-      "One rider at a time. Children under 5 not recommended. Must know how to swim or wear flotation device.",
+      "One rider at a time. Children under 5 not recommended. Must be able to exit splash pool unassisted.",
     colors: ["Green", "Blue", "Yellow"],
   },
+
+  {
+    id: "rampage-slide-wet",
+    companyId: "kidzz-star-jumpers",
+    name: "Rampage Slide (Wet)",
+    slug: "rampage-slide-wet",
+    category: "Water Slides",
+    themes: ["Adventure", "Extreme", "Summer", "Beach"],
+    description:
+      "The Rampage delivers the ultimate adrenaline rush — our tallest and most extreme water slide! At 24 feet tall, riders fly down a long, steep lane into a massive splash pool below. Not for the faint of heart. This is the go-to centerpiece for a party that people will be talking about for years.",
+    dimensions: "24ft tall x 12ft wide x 28ft long",
+    capacity: 1,
+    ageRange: "6–17 years",
+    setupTime: 60,
+    price: 479,
+    images: [
+      "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1597484661643-2f5fef640dd1?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "24ft extreme water slide",
+      "Large splash pool",
+      "Heavy-duty safety handles",
+      "Wide launching platform at top",
+      "Connects to garden hose",
+    ],
+    safetyNotes:
+      "Ages 6+ only. One rider at a time. Must be at least 48\" tall. No diving or jumping off sides.",
+    colors: ["Blue", "Red", "Yellow"],
+  },
+
+  {
+    id: "double-lane-slide-wet",
+    companyId: "kidzz-star-jumpers",
+    name: "24' Double Lane Slide (Wet)",
+    slug: "24ft-double-lane-slide-wet",
+    category: "Water Slides",
+    themes: ["Summer", "Beach", "Racing", "Competition"],
+    description:
+      "Race your friends down this massive 24-foot dual-lane water slide! Two riders can compete side-by-side in this thrilling head-to-head racing slide. Features a wide launching platform at the top, safety handles all the way up, and a large shared splash pool at the bottom. Our biggest crowd-pleaser for summer parties.",
+    dimensions: "24ft tall x 18ft wide x 28ft long",
+    capacity: 2,
+    ageRange: "6–17 years",
+    setupTime: 60,
+    price: 469,
+    images: [
+      "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Dual racing lanes",
+      "24ft height",
+      "Large shared splash pool",
+      "Safety handles throughout",
+      "Wide top platform",
+      "Connects to garden hose",
+    ],
+    safetyNotes:
+      "One rider per lane. Ages 6+ only. Must be 48\" tall. No pushing or roughhousing at launch.",
+    colors: ["Blue", "Green"],
+  },
+
   {
     id: "obstacle-course-50ft",
     companyId: "kidzz-star-jumpers",
@@ -305,11 +454,44 @@ export const rentalItems: RentalItem[] = [
       "Crawl tunnels",
       "Climbing walls",
       "Slide finish",
+      "Cleaned & sanitized before every rental",
     ],
     safetyNotes:
       "No pushing or shoving. Remove shoes before entering. Ages 5+ only.",
     colors: ["Blue", "Red", "Yellow"],
   },
+
+  {
+    id: "dunk-tank",
+    companyId: "kidzz-star-jumpers",
+    name: "Dunk Tank",
+    slug: "dunk-tank",
+    category: "Games",
+    themes: ["Games", "Carnival", "Competition", "Summer"],
+    description:
+      "The classic party challenge! Our dunk tank holds 500 gallons of water for a massive splash. Sit on the seat and dare your friends to knock you in! Three balls are included and the tank comes in several themes. A huge hit at school carnivals, company picnics, and block parties. Requires 8ft width and 20ft throwing area.",
+    dimensions: "8ft wide x 7ft tall (20ft throwing area needed)",
+    capacity: 1,
+    ageRange: "All ages",
+    setupTime: 30,
+    price: 499,
+    images: [
+      "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "500-gallon water tank",
+      "3 throwing balls included",
+      "Multiple theme options",
+      "Easy fill & drain",
+      "Cleaned & sanitized before every rental",
+    ],
+    safetyNotes:
+      "Person in seat must be able to swim or wear a flotation device. Seat weight capacity 250 lbs. Supervise young children near open water.",
+    colors: ["Blue", "White"],
+  },
+
   {
     id: "popcorn-machine",
     companyId: "kidzz-star-jumpers",
@@ -330,14 +512,15 @@ export const rentalItems: RentalItem[] = [
     ],
     available: true,
     features: [
-      "Commercial-grade",
+      "Commercial-grade machine",
       "50 servings included",
-      "Easy operation",
+      "Easy plug-and-go operation",
       "Cleaned before rental",
     ],
     safetyNotes: "Keep away from flammable materials. Adult operation recommended.",
     colors: ["Red", "Chrome"],
   },
+
   {
     id: "cotton-candy-machine",
     companyId: "kidzz-star-jumpers",
@@ -353,13 +536,13 @@ export const rentalItems: RentalItem[] = [
     setupTime: 10,
     price: 79,
     images: [
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=600&fit=crop",
     ],
     available: true,
     features: [
       "50 servings included",
-      "Assorted flavors",
+      "3 assorted flavors",
       "Easy operation",
       "Carnival atmosphere",
     ],
@@ -367,6 +550,157 @@ export const rentalItems: RentalItem[] = [
       "Keep away from children under 3. Hot spinning element — adult operation only.",
     colors: ["Pink", "White"],
   },
+
+  {
+    id: "bbq-grill",
+    companyId: "kidzz-star-jumpers",
+    name: "BBQ Grill",
+    slug: "bbq-grill",
+    category: "Concessions",
+    themes: ["Food", "BBQ", "Outdoor", "Events"],
+    description:
+      "Add some serious flavor to your event with a BBQ grill rental! Our large commercial-grade propane BBQ grill is perfect for feeding a crowd. Great for birthday parties, corporate picnics, and community events. Propane not included — pick up locally or ask about add-on bundles.",
+    dimensions: "48in x 24in cooking surface",
+    capacity: 0,
+    ageRange: "All ages",
+    setupTime: 15,
+    price: 79,
+    images: [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Large commercial-grade grill",
+      "Propane compatible",
+      "Cleaned before rental",
+      "Handles crowd-size cooking",
+    ],
+    safetyNotes:
+      "Propane not included. Keep grill away from inflatables and flammable materials. Adult operation only.",
+    colors: ["Black", "Silver"],
+  },
+
+  {
+    id: "tent-10x10",
+    companyId: "kidzz-star-jumpers",
+    name: "10x10 Pop Up Tent",
+    slug: "10x10-pop-up-tent",
+    category: "Tents",
+    themes: ["Shade", "Outdoor", "Events"],
+    description:
+      "Quick-setup 10x10 pop-up canopy tent — perfect for adding shade to any backyard party or event. Commercial-grade frame with white top. Easy to set up in minutes. Great for individual vendor booths, food stations, or small shaded areas.",
+    dimensions: "10ft x 10ft",
+    capacity: 10,
+    ageRange: "All ages",
+    setupTime: 15,
+    price: 95,
+    images: [
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Commercial-grade frame",
+      "White canopy top",
+      "Quick pop-up setup",
+      "Stake-and-weight compatible",
+    ],
+    safetyNotes:
+      "Do not use in winds over 25mph. Must be staked or weighted on all corners.",
+    colors: ["White"],
+  },
+
+  {
+    id: "tent-10x10-walls",
+    companyId: "kidzz-star-jumpers",
+    name: "10x10 Tent with Walls",
+    slug: "10x10-tent-with-walls",
+    category: "Tents",
+    themes: ["Shade", "Outdoor", "Events"],
+    description:
+      "Our 10x10 pop-up tent with full sidewalls — ideal when you need shade AND wind/sun protection. The removable sidewalls can be attached on any combination of sides for maximum flexibility. Great for outdoor food service, vendor booths, or when you need a more enclosed private space.",
+    dimensions: "10ft x 10ft",
+    capacity: 10,
+    ageRange: "All ages",
+    setupTime: 20,
+    price: 135,
+    images: [
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Commercial-grade frame",
+      "White canopy top",
+      "Removable sidewalls (all 4 sides)",
+      "Stake-and-weight compatible",
+    ],
+    safetyNotes:
+      "Do not use in winds over 25mph. Must be staked or weighted on all corners.",
+    colors: ["White"],
+  },
+
+  {
+    id: "tent-10x20",
+    companyId: "kidzz-star-jumpers",
+    name: "10x20 Pop Up Tent",
+    slug: "10x20-pop-up-tent",
+    category: "Tents",
+    themes: ["Shade", "Outdoor", "Events"],
+    description:
+      "Double the coverage with this 10x20 pop-up canopy tent. Perfect for larger seating areas, buffet setups, or long vendor rows. Commercial-grade frame with white top. Can comfortably shade up to 20 guests. Easy setup without tools.",
+    dimensions: "10ft x 20ft",
+    capacity: 20,
+    ageRange: "All ages",
+    setupTime: 25,
+    price: 178,
+    images: [
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Commercial-grade frame",
+      "White canopy top",
+      "Covers up to 20 guests",
+      "Stake-and-weight compatible",
+    ],
+    safetyNotes:
+      "Do not use in winds over 25mph. Must be staked or weighted on all corners.",
+    colors: ["White"],
+  },
+
+  {
+    id: "tent-10x30",
+    companyId: "kidzz-star-jumpers",
+    name: "10x30 Pop Up Tent",
+    slug: "10x30-pop-up-tent",
+    category: "Tents",
+    themes: ["Shade", "Outdoor", "Events"],
+    description:
+      "Our largest pop-up canopy option — the 10x30 tent is perfect for large parties, outdoor receptions, and corporate events. Provides shade for 30+ guests. Commercial-grade aluminum frame with white top. Can be configured with optional sidewalls for added protection.",
+    dimensions: "10ft x 30ft",
+    capacity: 30,
+    ageRange: "All ages",
+    setupTime: 35,
+    price: 269,
+    images: [
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Commercial-grade aluminum frame",
+      "White canopy top",
+      "Covers 30+ guests",
+      "Sidewalls available as add-on",
+    ],
+    safetyNotes:
+      "Do not use in winds over 25mph. Must be staked or weighted on all corners.",
+    colors: ["White"],
+  },
+
   {
     id: "tent-20x20",
     companyId: "kidzz-star-jumpers",
@@ -396,6 +730,7 @@ export const rentalItems: RentalItem[] = [
       "Do not use in high winds over 25mph. Must be staked or weighted on all corners.",
     colors: ["White"],
   },
+
   {
     id: "tables-chairs-package",
     companyId: "kidzz-star-jumpers",
@@ -404,7 +739,7 @@ export const rentalItems: RentalItem[] = [
     category: "Tables & Chairs",
     themes: ["Events", "Party", "Seating"],
     description:
-      "Our most popular seating package — 10 rectangular 6-foot folding tables and 80 matching folding chairs. Perfect for parties, school events, or corporate gatherings. Tables seat 8 comfortably. Chairs are durable plastic folding chairs in white or black.",
+      "Our most popular seating package — 10 rectangular 6-foot folding tables and 80 matching folding chairs. Perfect for parties, school events, or corporate gatherings. Tables seat 8 comfortably. Chairs are durable plastic folding chairs in white or black. Smaller packages also available — contact us for custom quantities.",
     dimensions: "6ft tables, standard chairs",
     capacity: 80,
     ageRange: "All ages",
@@ -425,7 +760,8 @@ export const rentalItems: RentalItem[] = [
     colors: ["White", "Black"],
   },
 
-  // --- BAY AREA BOUNCE ---
+  // ─── BAY AREA BOUNCE ───────────────────────────────────────────────────────
+
   {
     id: "superhero-combo",
     companyId: "bay-area-bounce",
@@ -446,14 +782,16 @@ export const rentalItems: RentalItem[] = [
     ],
     available: true,
     features: [
-      "Marvel & DC themed",
+      "Marvel & DC themed artwork",
       "4-in-1 entertainment",
       "Dual slides",
       "Interior obstacles",
+      "Cleaned & sanitized before every rental",
     ],
     safetyNotes: "Maximum 8 children at one time. No rough play.",
     colors: ["Red", "Blue", "Black"],
   },
+
   {
     id: "jungle-safari-bounce",
     companyId: "bay-area-bounce",
@@ -470,7 +808,7 @@ export const rentalItems: RentalItem[] = [
     price: 179,
     images: [
       "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
     ],
     available: true,
     features: [
@@ -478,10 +816,12 @@ export const rentalItems: RentalItem[] = [
       "Extra-large bounce area",
       "Safety netting on all sides",
       "Built-in entry slide",
+      "Cleaned & sanitized before every rental",
     ],
     safetyNotes: "Max 6 children. Remove shoes before entering.",
     colors: ["Green", "Brown", "Yellow"],
   },
+
   {
     id: "dual-water-slide-combo",
     companyId: "bay-area-bounce",
@@ -498,7 +838,7 @@ export const rentalItems: RentalItem[] = [
     price: 399,
     images: [
       "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
     ],
     available: true,
     features: [
@@ -506,13 +846,167 @@ export const rentalItems: RentalItem[] = [
       "20ft height",
       "Large splash pool",
       "Safety handles throughout",
+      "Cleaned & sanitized before every rental",
     ],
     safetyNotes:
-      "One rider per lane. Ages 5+ only. Children under 48\" height should be accompanied by adult.",
+      "One rider per lane. Ages 5+ only. Children under 48\" height should be accompanied by an adult.",
     colors: ["Blue", "Green"],
   },
 
-  // --- ASTRO JUMP NORTH BAY ---
+  {
+    id: "rainbow-unicorn-bounce",
+    companyId: "bay-area-bounce",
+    name: "Rainbow Unicorn Bounce House",
+    slug: "rainbow-unicorn-bounce-house",
+    category: "Bounce Houses",
+    themes: ["Unicorn", "Rainbow", "Fantasy", "Princess"],
+    description:
+      "Magical and colorful, this Rainbow Unicorn bounce house is a dream for any unicorn-loving kid! Bursting with vibrant rainbow colors and adorable unicorn graphics throughout. Features a large bounce area with safety netting on all sides and an easy-access entry ramp.",
+    dimensions: "15ft x 15ft x 13ft",
+    capacity: 6,
+    ageRange: "2–12 years",
+    setupTime: 30,
+    price: 189,
+    images: [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1597484661643-2f5fef640dd1?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Rainbow unicorn themed artwork",
+      "Full safety netting",
+      "Easy entry ramp",
+      "Interior basketball hoop",
+      "Cleaned & sanitized before every rental",
+    ],
+    safetyNotes: "Max 6 children. Remove shoes before entering.",
+    colors: ["Pink", "Purple", "Rainbow"],
+  },
+
+  {
+    id: "princess-castle-combo",
+    companyId: "bay-area-bounce",
+    name: "Princess Castle 4-in-1 Combo",
+    slug: "princess-castle-4in1-combo",
+    category: "Combos",
+    themes: ["Princess", "Castle", "Disney", "Fantasy"],
+    description:
+      "The royal treatment for your little princess! This stunning castle-themed 4-in-1 combo features a bounce area, climbing wall, slide, and obstacle section adorned with princess and castle artwork. Perfect for birthdays, school events, and any occasion deserving a royal touch.",
+    dimensions: "21ft x 15ft x 15ft",
+    capacity: 8,
+    ageRange: "3–12 years",
+    setupTime: 45,
+    price: 269,
+    images: [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Princess castle themed artwork",
+      "4-in-1: bounce, climb, slide, obstacle",
+      "Commercial-grade vinyl",
+      "Blower motor included",
+      "Cleaned & sanitized before every rental",
+    ],
+    safetyNotes: "One person on slide at a time. Max weight per climber 150 lbs.",
+    colors: ["Pink", "Gold", "Purple"],
+  },
+
+  {
+    id: "sports-arena-combo",
+    companyId: "bay-area-bounce",
+    name: "Sports Arena 4-in-1 Combo",
+    slug: "sports-arena-4in1-combo",
+    category: "Combos",
+    themes: ["Sports", "Football", "Basketball", "Adventure"],
+    description:
+      "Perfect for the sports fanatic! This action-packed 4-in-1 combo is decked out in sports-themed graphics and features a bounce house, climbing wall, slide, and obstacle course. Great for sports team parties, school events, or any kid who loves the game.",
+    dimensions: "22ft x 15ft x 14ft",
+    capacity: 8,
+    ageRange: "4–14 years",
+    setupTime: 45,
+    price: 289,
+    images: [
+      "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Sports themed artwork",
+      "4-in-1 entertainment",
+      "Dual slides",
+      "Interior basketball hoop",
+      "Cleaned & sanitized before every rental",
+    ],
+    safetyNotes: "One child at a time on slides. No rough play. Adult supervision required.",
+    colors: ["Green", "Blue", "Red"],
+  },
+
+  {
+    id: "giant-obstacle-course",
+    companyId: "bay-area-bounce",
+    name: "Giant Obstacle Course (40ft)",
+    slug: "giant-obstacle-course-40ft",
+    category: "Obstacle Courses",
+    themes: ["Adventure", "Sports", "Challenge", "Competition"],
+    description:
+      "Race through this 40-foot inflatable obstacle course! Packed with crawl tunnels, pop-up pillars, a climbing wall, and a slide finish. Perfect for birthday parties, school carnivals, and any event where you want kids burning off energy. Watch the competition heat up as kids race to the finish!",
+    dimensions: "40ft x 12ft x 12ft",
+    capacity: 4,
+    ageRange: "5–15 years",
+    setupTime: 50,
+    price: 399,
+    images: [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "40ft dual-lane course",
+      "Crawl tunnels",
+      "Pop-up obstacles",
+      "Climbing wall",
+      "Slide finish",
+      "Cleaned & sanitized before every rental",
+    ],
+    safetyNotes:
+      "No pushing or shoving inside. Remove shoes. Ages 5+ only.",
+    colors: ["Blue", "Red", "Yellow"],
+  },
+
+  {
+    id: "popcorn-cotton-candy-bundle",
+    companyId: "bay-area-bounce",
+    name: "Popcorn & Cotton Candy Bundle",
+    slug: "popcorn-cotton-candy-bundle",
+    category: "Concessions",
+    themes: ["Concessions", "Carnival", "Food", "Snacks"],
+    description:
+      "Get two classic carnival treats in one convenient bundle! Rent both a commercial-grade popcorn machine and a cotton candy machine together at a bundled rate. Includes 50 servings of supplies for each machine. Add a carnival atmosphere to any party without the hassle of managing two separate rentals.",
+    dimensions: "Approx 4ft x 4ft combined footprint",
+    capacity: 0,
+    ageRange: "All ages",
+    setupTime: 15,
+    price: 129,
+    images: [
+      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Popcorn machine with 50 servings",
+      "Cotton candy machine with 50 servings",
+      "Assorted cotton candy flavors",
+      "Both machines cleaned before rental",
+    ],
+    safetyNotes:
+      "Hot elements on both machines — adult operation only. Keep away from children under 3.",
+    colors: ["Red", "Pink", "White"],
+  },
+
+  // ─── ASTRO JUMP NORTH BAY ──────────────────────────────────────────────────
+
   {
     id: "space-adventure-combo",
     companyId: "astro-jump-north-bay",
@@ -533,23 +1027,25 @@ export const rentalItems: RentalItem[] = [
     ],
     available: true,
     features: [
-      "Space/galaxy themed",
+      "Space/galaxy themed artwork",
       "5 activity zones",
       "Dual slides",
       "Climbing wall",
+      "Delivery and setup included",
     ],
     safetyNotes: "Adult supervision required at all times. Max 10 children.",
     colors: ["Dark Blue", "Purple", "Silver"],
   },
+
   {
     id: "dinosaur-bounce",
     companyId: "astro-jump-north-bay",
-    name: "Dinosaur Stomp Bounce House",
-    slug: "dinosaur-stomp-bounce-house",
+    name: "Dinosaur Bounce House",
+    slug: "dinosaur-bounce-house",
     category: "Bounce Houses",
     themes: ["Dinosaur", "Jurassic", "Adventure", "T-Rex"],
     description:
-      "ROAR into party time with this Jurassic-themed bounce house! Featuring T-Rex, Triceratops, Brachiosaurus, and Velociraptor graphics. Huge bounce area with an interior hoop for basketball. Kids will feel like they've stepped into a prehistoric adventure. A massive hit with dino fans!",
+      "ROAR into party time with this Jurassic-themed bounce house! Featuring T-Rex, Triceratops, Brachiosaurus, and Velociraptor graphics in bold, eye-catching colors. Huge bounce area with an interior basketball hoop. Kids will feel like they've stepped into a prehistoric adventure. Serving Novato, San Anselmo, San Francisco, and all of Marin County.",
     dimensions: "16ft x 16ft x 14ft",
     capacity: 8,
     ageRange: "2–12 years",
@@ -557,19 +1053,21 @@ export const rentalItems: RentalItem[] = [
     price: 189,
     images: [
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=800&h=600&fit=crop",
     ],
     available: true,
     features: [
-      "Dinosaur themed artwork",
+      "Bold dinosaur themed artwork",
       "Interior basketball hoop",
       "Extra-large bounce area",
       "Safety mesh windows",
+      "Delivery and setup included",
     ],
     safetyNotes:
       "Max 8 children. Do not allow children to jump into each other.",
     colors: ["Green", "Brown", "Orange"],
   },
+
   {
     id: "giant-slip-slide",
     companyId: "astro-jump-north-bay",
@@ -578,7 +1076,7 @@ export const rentalItems: RentalItem[] = [
     category: "Water Slides",
     themes: ["Summer", "Water", "Outdoor", "Fun"],
     description:
-      "The classic Slip & Slide, supersized! This 40-foot inflatable slip and slide is the perfect summer party centerpiece. Kids (and adults!) run and slide the full length into a splash pool. Features a continuous sprinkler strip to keep the surface wet and fast. No more tiny backyard slip slides — this is the real deal!",
+      "The classic Slip & Slide, supersized! This 40-foot inflatable slip and slide is the perfect summer party centerpiece. Kids (and adults!) run and slide the full length into a splash pool. Features a continuous sprinkler strip to keep the surface wet and fast. Available throughout Marin, Sonoma, and San Francisco.",
     dimensions: "40ft long x 8ft wide",
     capacity: 1,
     ageRange: "4–17 years",
@@ -586,18 +1084,210 @@ export const rentalItems: RentalItem[] = [
     price: 249,
     images: [
       "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
     ],
     available: true,
     features: [
       "40ft giant slide",
       "Continuous sprinkler strip",
       "Inflatable splash pool",
-      "One at a time for safety",
+      "Delivery and setup included",
     ],
     safetyNotes:
       "One rider at a time. Run straight — no diving. Remove all jewelry and sharp objects.",
     colors: ["Blue", "Yellow"],
+  },
+
+  {
+    id: "disney-frozen-junior",
+    companyId: "astro-jump-north-bay",
+    name: "Disney Frozen Bounce House",
+    slug: "disney-frozen-bounce-house",
+    category: "Bounce Houses",
+    themes: ["Disney", "Frozen", "Elsa", "Anna", "Princess"],
+    description:
+      "Do your kids love Frozen? Open up the backyard to all of your children's friends with this amazing Disney Frozen Bounce House featuring Elsa, Anna, and the whole Arendelle crew! Part of the Astro Jump Junior Jumpy collection — perfectly sized for birthday parties and backyard fun in Marin and Sonoma County.",
+    dimensions: "13ft x 13ft x 11ft",
+    capacity: 6,
+    ageRange: "2–10 years",
+    setupTime: 25,
+    price: 149,
+    images: [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Official Disney Frozen artwork",
+      "Full safety netting",
+      "Junior Jumpy collection",
+      "Delivery and setup included",
+      "Cleaned & sanitized before every rental",
+    ],
+    safetyNotes:
+      "Max 6 children. Adults not permitted. Always have an adult supervising.",
+    colors: ["Blue", "White", "Purple"],
+  },
+
+  {
+    id: "princess-palace-playground",
+    companyId: "astro-jump-north-bay",
+    name: "Princess Palace Playground",
+    slug: "princess-palace-playground",
+    category: "Combos",
+    themes: ["Princess", "Castle", "Fantasy", "Toddler"],
+    description:
+      "This fun and beautiful Princess Palace Playground will make your little princess's eyes light up! With plenty of room to jump and a variety of other activities inside, your child and guests will never want to stop playing. Designed for children 5 and younger — a safe, age-appropriate wonderland. Pair it with a cotton candy machine for the perfect party package!",
+    dimensions: "16ft x 14ft x 12ft",
+    capacity: 8,
+    ageRange: "1–5 years",
+    setupTime: 35,
+    price: 199,
+    images: [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1597484661643-2f5fef640dd1?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Princess palace themed artwork",
+      "Designed for ages 5 and under",
+      "Multiple activity zones inside",
+      "Full safety netting",
+      "Delivery and setup included",
+    ],
+    safetyNotes:
+      "For ages 1–5 only. No children over 5. Adult must supervise at all times.",
+    colors: ["Pink", "Gold", "Purple"],
+  },
+
+  {
+    id: "royal-princess-carriage",
+    companyId: "astro-jump-north-bay",
+    name: "Royal Princess Carriage Combo",
+    slug: "royal-princess-carriage-combo",
+    category: "Combos",
+    themes: [
+      "Princess",
+      "Cinderella",
+      "Belle",
+      "Ariel",
+      "Aurora",
+      "Snow White",
+      "Disney",
+    ],
+    description:
+      "The most iconic princess rental in our fleet! This carriage-shaped combo is perfect for any princess party, featuring original Disney Princesses — Cinderella, Belle (Beauty & the Beast), Aurora (Sleeping Beauty), Snow White, Ariel (Little Mermaid) — plus newer favorites like Tiana, Rapunzel, Merida, and Sofia the 1st. Includes a bounce area, slide, and obstacle activities.",
+    dimensions: "20ft x 14ft x 14ft",
+    capacity: 8,
+    ageRange: "3–12 years",
+    setupTime: 45,
+    price: 259,
+    images: [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Carriage-shaped design",
+      "All major Disney Princesses featured",
+      "Bounce area + slide + activities",
+      "Full safety netting",
+      "Delivery and setup included",
+    ],
+    safetyNotes: "One person on the slide at a time. Max 8 children. No rough play.",
+    colors: ["Pink", "Gold", "White"],
+  },
+
+  {
+    id: "robots-jump",
+    companyId: "astro-jump-north-bay",
+    name: "Robots Jump Bounce House",
+    slug: "robots-jump-bounce-house",
+    category: "Bounce Houses",
+    themes: ["Robots", "Science", "Space", "Transformers", "Sci-Fi"],
+    description:
+      "Perfect for young ones who love robots, Star Wars, and Transformers! This eye-catching Robots Jump bounce house features colorful robot and sci-fi graphics throughout. A large bounce area with safety netting on all sides and an interior basketball hoop. A great unique theme that stands out at any party!",
+    dimensions: "15ft x 15ft x 12ft",
+    capacity: 6,
+    ageRange: "2–12 years",
+    setupTime: 30,
+    price: 169,
+    images: [
+      "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Robot/sci-fi themed artwork",
+      "Interior basketball hoop",
+      "Safety netting on all sides",
+      "Entry ramp",
+      "Delivery and setup included",
+    ],
+    safetyNotes: "Max 6 children. Remove shoes before entering. Adult supervision required.",
+    colors: ["Blue", "Silver", "Red"],
+  },
+
+  {
+    id: "hello-kitty-junior",
+    companyId: "astro-jump-north-bay",
+    name: "Hello Kitty Junior Bounce House",
+    slug: "hello-kitty-junior-bounce-house",
+    category: "Bounce Houses",
+    themes: ["Hello Kitty", "Kawaii", "Pink", "Princess"],
+    description:
+      "Adorable Hello Kitty-themed bounce house — part of the Astro Jump Junior Jumpy collection. Perfectly sized for smaller backyard spaces, this cute jumper features Hello Kitty graphics all around. Great for preschool and early elementary birthday parties in San Francisco, Marin, and Sonoma County.",
+    dimensions: "13ft x 13ft x 11ft",
+    capacity: 6,
+    ageRange: "2–10 years",
+    setupTime: 25,
+    price: 149,
+    images: [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Hello Kitty themed artwork",
+      "Junior Jumpy collection",
+      "Full safety netting",
+      "Compact size for smaller yards",
+      "Delivery and setup included",
+    ],
+    safetyNotes:
+      "Max 6 children. No adults permitted. Always supervise children.",
+    colors: ["Pink", "White", "Red"],
+  },
+
+  {
+    id: "elmo-junior-bounce",
+    companyId: "astro-jump-north-bay",
+    name: "Elmo & Friends Junior Bounce House",
+    slug: "elmo-friends-junior-bounce-house",
+    category: "Bounce Houses",
+    themes: ["Sesame Street", "Elmo", "Toddler", "Fun"],
+    description:
+      "Elmo and his Sesame Street friends are here to party! This charming Junior Jumpy bounce house features Elmo, Big Bird, Cookie Monster, and more. A perfect choice for toddlers and young children who love Sesame Street. Available throughout Marin, Sonoma, and San Francisco for backyard birthdays and celebrations.",
+    dimensions: "13ft x 13ft x 11ft",
+    capacity: 6,
+    ageRange: "2–8 years",
+    setupTime: 25,
+    price: 149,
+    images: [
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+    ],
+    available: true,
+    features: [
+      "Sesame Street / Elmo themed artwork",
+      "Junior Jumpy collection",
+      "Full safety netting",
+      "Toddler-friendly design",
+      "Delivery and setup included",
+    ],
+    safetyNotes:
+      "For ages 2–8 only. Always have an adult supervising nearby.",
+    colors: ["Red", "Yellow", "Blue"],
   },
 ];
 
@@ -634,7 +1324,10 @@ export function getCompaniesByLocation(cityOrZip: string): Company[] {
   const q = cityOrZip.toLowerCase().trim();
   if (!q) return companies;
   return companies.filter((c) =>
-    c.serviceArea.some((area) => area.toLowerCase().includes(q) || q.includes(area.toLowerCase()))
+    c.serviceArea.some(
+      (area) =>
+        area.toLowerCase().includes(q) || q.includes(area.toLowerCase())
+    )
   );
 }
 
@@ -648,12 +1341,44 @@ export function getItemsByLocation(cityOrZip: string): RentalItem[] {
 }
 
 export const categories = [
-  { name: "Bounce Houses", icon: "🏰", count: rentalItems.filter((i) => i.category === "Bounce Houses").length },
-  { name: "Water Slides", icon: "💦", count: rentalItems.filter((i) => i.category === "Water Slides").length },
-  { name: "Combos", icon: "⭐", count: rentalItems.filter((i) => i.category === "Combos").length },
-  { name: "Obstacle Courses", icon: "🏃", count: rentalItems.filter((i) => i.category === "Obstacle Courses").length },
-  { name: "Concessions", icon: "🍿", count: rentalItems.filter((i) => i.category === "Concessions").length },
-  { name: "Tents", icon: "⛺", count: rentalItems.filter((i) => i.category === "Tents").length },
-  { name: "Tables & Chairs", icon: "🪑", count: rentalItems.filter((i) => i.category === "Tables & Chairs").length },
-  { name: "Games", icon: "🎮", count: 0 },
+  {
+    name: "Bounce Houses",
+    icon: "🏰",
+    count: rentalItems.filter((i) => i.category === "Bounce Houses").length,
+  },
+  {
+    name: "Water Slides",
+    icon: "💦",
+    count: rentalItems.filter((i) => i.category === "Water Slides").length,
+  },
+  {
+    name: "Combos",
+    icon: "⭐",
+    count: rentalItems.filter((i) => i.category === "Combos").length,
+  },
+  {
+    name: "Obstacle Courses",
+    icon: "🏃",
+    count: rentalItems.filter((i) => i.category === "Obstacle Courses").length,
+  },
+  {
+    name: "Concessions",
+    icon: "🍿",
+    count: rentalItems.filter((i) => i.category === "Concessions").length,
+  },
+  {
+    name: "Tents",
+    icon: "⛺",
+    count: rentalItems.filter((i) => i.category === "Tents").length,
+  },
+  {
+    name: "Tables & Chairs",
+    icon: "🪑",
+    count: rentalItems.filter((i) => i.category === "Tables & Chairs").length,
+  },
+  {
+    name: "Games",
+    icon: "🎮",
+    count: rentalItems.filter((i) => i.category === "Games").length,
+  },
 ];
