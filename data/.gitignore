@@ -1,0 +1,7 @@
+# Raw HTML downloads — large, not needed in repo
+raw/
+
+# Keep parsed JSON (source of truth for data.ts)
+!parsed/
+!parsed/*.json
+!parsed/*.md
