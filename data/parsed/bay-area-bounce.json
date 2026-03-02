@@ -1,0 +1,698 @@
+{
+  "company": {
+    "id": "bay-area-bounce",
+    "name": "Bay Area Bounce",
+    "slug": "bay-area-bounce",
+    "logo": "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?w=200&h=200&fit=crop",
+    "description": "Premium bounce house and party rental company serving the greater South Bay. We pride ourselves on fast delivery, professional setup, and spotless equipment. Every unit is thoroughly cleaned and inspected before each rental.",
+    "yearsInBusiness": 12,
+    "rating": 4.7,
+    "reviewCount": 189,
+    "location": "San Jose, CA",
+    "serviceArea": [
+      "San Jose",
+      "Santa Clara",
+      "Milpitas",
+      "Campbell",
+      "Los Gatos",
+      "Saratoga",
+      "Los Altos",
+      "Mountain View",
+      "Sunnyvale"
+    ],
+    "phone": "(408) 555-0200",
+    "email": "info@bayareabounce.com",
+    "website": "https://bayareabounce.com",
+    "verified": true,
+    "insuranceCertified": true
+  },
+  "items": [
+    {
+      "id": "superhero-combo",
+      "companyId": "bay-area-bounce",
+      "name": "Superhero 4-in-1 Combo",
+      "slug": "superhero-4in1-combo",
+      "category": "Combos",
+      "themes": [
+        "Superhero",
+        "Marvel",
+        "DC",
+        "Spider-Man",
+        "Batman"
+      ],
+      "description": "Every kid wants to be a superhero! This action-packed 4-in-1 combo features Spider-Man, Batman, and Avengers artwork throughout. Includes bounce area, climbing wall, two slides, and obstacle section. The ultimate combo for superhero fans of all ages.",
+      "dimensions": "22ft x 16ft x 15ft",
+      "capacity": 8,
+      "ageRange": "3–14 years",
+      "setupTime": 50,
+      "price": 279,
+      "images": [
+        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "Marvel & DC themed artwork",
+        "4-in-1 entertainment",
+        "Dual slides",
+        "Interior obstacles",
+        "Cleaned & sanitized before every rental"
+      ],
+      "safetyNotes": "Maximum 8 children at one time. No rough play.",
+      "colors": [
+        "Red",
+        "Blue",
+        "Black"
+      ]
+    },
+    {
+      "id": "jungle-safari-bounce",
+      "companyId": "bay-area-bounce",
+      "name": "Jungle Safari Bounce House",
+      "slug": "jungle-safari-bounce-house",
+      "category": "Bounce Houses",
+      "themes": [
+        "Jungle",
+        "Safari",
+        "Animals",
+        "Adventure"
+      ],
+      "description": "Go wild at your party with this Jungle Safari themed bounce house! Full of lions, giraffes, elephants, and zebras throughout. Features an extra-large bounce area, safety netting on all four sides, and a fun entry slide. Perfect for animal lovers and adventurous kids!",
+      "dimensions": "15ft x 15ft x 13ft",
+      "capacity": 6,
+      "ageRange": "2–12 years",
+      "setupTime": 30,
+      "price": 179,
+      "images": [
+        "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "Jungle/animal themed artwork",
+        "Extra-large bounce area",
+        "Safety netting on all sides",
+        "Built-in entry slide",
+        "Cleaned & sanitized before every rental"
+      ],
+      "safetyNotes": "Max 6 children. Remove shoes before entering.",
+      "colors": [
+        "Green",
+        "Brown",
+        "Yellow"
+      ]
+    },
+    {
+      "id": "dual-water-slide-combo",
+      "companyId": "bay-area-bounce",
+      "name": "Dual Lane Water Slide Combo",
+      "slug": "dual-lane-water-slide-combo",
+      "category": "Water Slides",
+      "themes": [
+        "Summer",
+        "Beach",
+        "Tropical",
+        "Water Park"
+      ],
+      "description": "Double the fun with this dual-lane water slide! Two riders can race side-by-side down this 20-foot giant. Features a large splash pool at the bottom, safety handles all the way up, and a wide launching platform at the top. The most exciting water slide rental we offer!",
+      "dimensions": "20ft tall x 18ft wide x 22ft long",
+      "capacity": 2,
+      "ageRange": "5–17 years",
+      "setupTime": 60,
+      "price": 399,
+      "images": [
+        "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "Dual racing lanes",
+        "20ft height",
+        "Large splash pool",
+        "Safety handles throughout",
+        "Cleaned & sanitized before every rental"
+      ],
+      "safetyNotes": "One rider per lane. Ages 5+ only. Children under 48\" height should be accompanied by an adult.",
+      "colors": [
+        "Blue",
+        "Green"
+      ]
+    },
+    {
+      "id": "rainbow-unicorn-bounce",
+      "companyId": "bay-area-bounce",
+      "name": "Rainbow Unicorn Bounce House",
+      "slug": "rainbow-unicorn-bounce-house",
+      "category": "Bounce Houses",
+      "themes": [
+        "Unicorn",
+        "Rainbow",
+        "Fantasy",
+        "Princess"
+      ],
+      "description": "Magical and colorful, this Rainbow Unicorn bounce house is a dream for any unicorn-loving kid! Bursting with vibrant rainbow colors and adorable unicorn graphics throughout. Features a large bounce area with safety netting on all sides and an easy-access entry ramp.",
+      "dimensions": "15ft x 15ft x 13ft",
+      "capacity": 6,
+      "ageRange": "2–12 years",
+      "setupTime": 30,
+      "price": 189,
+      "images": [
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1597484661643-2f5fef640dd1?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "Rainbow unicorn themed artwork",
+        "Full safety netting",
+        "Easy entry ramp",
+        "Interior basketball hoop",
+        "Cleaned & sanitized before every rental"
+      ],
+      "safetyNotes": "Max 6 children. Remove shoes before entering.",
+      "colors": [
+        "Pink",
+        "Purple",
+        "Rainbow"
+      ]
+    },
+    {
+      "id": "princess-castle-combo",
+      "companyId": "bay-area-bounce",
+      "name": "Princess Castle 4-in-1 Combo",
+      "slug": "princess-castle-4in1-combo",
+      "category": "Combos",
+      "themes": [
+        "Princess",
+        "Castle",
+        "Disney",
+        "Fantasy"
+      ],
+      "description": "The royal treatment for your little princess! This stunning castle-themed 4-in-1 combo features a bounce area, climbing wall, slide, and obstacle section adorned with princess and castle artwork. Perfect for birthdays, school events, and any occasion deserving a royal touch.",
+      "dimensions": "21ft x 15ft x 15ft",
+      "capacity": 8,
+      "ageRange": "3–12 years",
+      "setupTime": 45,
+      "price": 269,
+      "images": [
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "Princess castle themed artwork",
+        "4-in-1: bounce, climb, slide, obstacle",
+        "Commercial-grade vinyl",
+        "Blower motor included",
+        "Cleaned & sanitized before every rental"
+      ],
+      "safetyNotes": "One person on slide at a time. Max weight per climber 150 lbs.",
+      "colors": [
+        "Pink",
+        "Gold",
+        "Purple"
+      ]
+    },
+    {
+      "id": "sports-arena-combo",
+      "companyId": "bay-area-bounce",
+      "name": "Sports Arena 4-in-1 Combo",
+      "slug": "sports-arena-4in1-combo",
+      "category": "Combos",
+      "themes": [
+        "Sports",
+        "Football",
+        "Basketball",
+        "Adventure"
+      ],
+      "description": "Perfect for the sports fanatic! This action-packed 4-in-1 combo is decked out in sports-themed graphics and features a bounce house, climbing wall, slide, and obstacle course. Great for sports team parties, school events, or any kid who loves the game.",
+      "dimensions": "22ft x 15ft x 14ft",
+      "capacity": 8,
+      "ageRange": "4–14 years",
+      "setupTime": 45,
+      "price": 289,
+      "images": [
+        "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "Sports themed artwork",
+        "4-in-1 entertainment",
+        "Dual slides",
+        "Interior basketball hoop",
+        "Cleaned & sanitized before every rental"
+      ],
+      "safetyNotes": "One child at a time on slides. No rough play. Adult supervision required.",
+      "colors": [
+        "Green",
+        "Blue",
+        "Red"
+      ]
+    },
+    {
+      "id": "giant-obstacle-course",
+      "companyId": "bay-area-bounce",
+      "name": "Giant Obstacle Course (40ft)",
+      "slug": "giant-obstacle-course-40ft",
+      "category": "Obstacle Courses",
+      "themes": [
+        "Adventure",
+        "Sports",
+        "Challenge",
+        "Competition"
+      ],
+      "description": "Race through this 40-foot inflatable obstacle course! Packed with crawl tunnels, pop-up pillars, a climbing wall, and a slide finish. Perfect for birthday parties, school carnivals, and any event where you want kids burning off energy. Watch the competition heat up as kids race to the finish!",
+      "dimensions": "40ft x 12ft x 12ft",
+      "capacity": 4,
+      "ageRange": "5–15 years",
+      "setupTime": 50,
+      "price": 399,
+      "images": [
+        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "40ft dual-lane course",
+        "Crawl tunnels",
+        "Pop-up obstacles",
+        "Climbing wall",
+        "Slide finish",
+        "Cleaned & sanitized before every rental"
+      ],
+      "safetyNotes": "No pushing or shoving inside. Remove shoes. Ages 5+ only.",
+      "colors": [
+        "Blue",
+        "Red",
+        "Yellow"
+      ]
+    },
+    {
+      "id": "popcorn-cotton-candy-bundle",
+      "companyId": "bay-area-bounce",
+      "name": "Popcorn & Cotton Candy Bundle",
+      "slug": "popcorn-cotton-candy-bundle",
+      "category": "Concessions",
+      "themes": [
+        "Concessions",
+        "Carnival",
+        "Food",
+        "Snacks"
+      ],
+      "description": "Get two classic carnival treats in one convenient bundle! Rent both a commercial-grade popcorn machine and a cotton candy machine together at a bundled rate. Includes 50 servings of supplies for each machine. Add a carnival atmosphere to any party without the hassle of managing two separate rentals.",
+      "dimensions": "Approx 4ft x 4ft combined footprint",
+      "capacity": 0,
+      "ageRange": "All ages",
+      "setupTime": 15,
+      "price": 129,
+      "images": [
+        "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "Popcorn machine with 50 servings",
+        "Cotton candy machine with 50 servings",
+        "Assorted cotton candy flavors",
+        "Both machines cleaned before rental"
+      ],
+      "safetyNotes": "Hot elements on both machines — adult operation only. Keep away from children under 3.",
+      "colors": [
+        "Red",
+        "Pink",
+        "White"
+      ]
+    },
+    {
+      "id": "bab-toddler-bounce",
+      "companyId": "bay-area-bounce",
+      "name": "Toddler Bounce House",
+      "slug": "toddler-bounce-house-bab",
+      "category": "Bounce Houses",
+      "themes": [
+        "Toddler",
+        "Animals",
+        "Farm",
+        "Fun"
+      ],
+      "description": "Designed just for little ones! This compact, low-profile toddler bounce house features bright farm animal graphics, soft interior walls, and a gentle bounce surface safe for children ages 1–5. Lower walls mean easy visibility for supervising adults. The perfect centerpiece for a toddler birthday party.",
+      "dimensions": "12ft x 12ft x 8ft",
+      "capacity": 6,
+      "ageRange": "1–5 years",
+      "setupTime": 20,
+      "price": 159,
+      "images": [
+        "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "Toddler-safe low walls",
+        "Soft interior padding",
+        "Farm animal themed artwork",
+        "Easy adult supervision design",
+        "Cleaned & sanitized before every rental"
+      ],
+      "safetyNotes": "For ages 1–5 only. No children over 5. Always have an adult within arm's reach.",
+      "colors": [
+        "Yellow",
+        "Green",
+        "Red"
+      ]
+    },
+    {
+      "id": "bab-pirate-ship",
+      "companyId": "bay-area-bounce",
+      "name": "Pirate Ship Bounce House",
+      "slug": "pirate-ship-bounce-house",
+      "category": "Bounce Houses",
+      "themes": [
+        "Pirate",
+        "Adventure",
+        "Ocean",
+        "Treasure"
+      ],
+      "description": "Ahoy, mateys! This swashbuckling Pirate Ship bounce house is a showstopper at any party. The ship-shaped inflatable features pirate graphics, cannons, and ocean waves. Includes a large bounce area, safety netting on all sides, and an interior basketball hoop. Perfect for adventurous kids who dream of sailing the seven seas!",
+      "dimensions": "18ft x 15ft x 14ft",
+      "capacity": 8,
+      "ageRange": "3–14 years",
+      "setupTime": 35,
+      "price": 199,
+      "images": [
+        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1566041510394-cf7c1b1eae6c?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "Pirate ship themed design",
+        "Interior basketball hoop",
+        "Safety netting on all sides",
+        "Easy entry ramp",
+        "Cleaned & sanitized before every rental"
+      ],
+      "safetyNotes": "Max 8 children. No rough play. Remove shoes before entering.",
+      "colors": [
+        "Brown",
+        "Black",
+        "Blue"
+      ]
+    },
+    {
+      "id": "bab-tropical-water-slide",
+      "companyId": "bay-area-bounce",
+      "name": "Tropical Water Slide (18ft)",
+      "slug": "tropical-water-slide-18ft",
+      "category": "Water Slides",
+      "themes": [
+        "Tropical",
+        "Beach",
+        "Summer",
+        "Luau"
+      ],
+      "description": "Bring the beach to your backyard with this 18-foot tropical water slide! Kids climb the safety-handle ladder and plunge down into the splash pool at the bottom. Decorated with tropical palms and vibrant colors. Connects to a standard garden hose. A must-have for summer birthday parties in the South Bay.",
+      "dimensions": "18ft tall x 10ft wide x 20ft long",
+      "capacity": 1,
+      "ageRange": "5–17 years",
+      "setupTime": 45,
+      "price": 379,
+      "images": [
+        "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "18ft tall single-lane slide",
+        "Built-in splash pool",
+        "Safety climbing handles",
+        "Tropical themed artwork",
+        "Connects to garden hose",
+        "Cleaned & sanitized before every rental"
+      ],
+      "safetyNotes": "One rider at a time. Children under 5 not permitted. Must be able to exit splash pool unassisted.",
+      "colors": [
+        "Green",
+        "Yellow",
+        "Blue"
+      ]
+    },
+    {
+      "id": "bab-wet-dry-combo",
+      "companyId": "bay-area-bounce",
+      "name": "Adventure Wet/Dry Combo",
+      "slug": "adventure-wet-dry-combo",
+      "category": "Combos",
+      "themes": [
+        "Adventure",
+        "Summer",
+        "Water Park",
+        "Sports"
+      ],
+      "description": "The ultimate summer combo! This 4-in-1 unit works both wet (water slide mode) and dry (standard bounce mode). Features a bounce area, climbing wall, obstacle section, and a large slide with a splash pool. Switch between wet and dry modes depending on the weather. The perfect all-in-one party solution.",
+      "dimensions": "22ft x 16ft x 14ft",
+      "capacity": 8,
+      "ageRange": "3–14 years",
+      "setupTime": 50,
+      "price": 369,
+      "images": [
+        "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "Works wet or dry",
+        "4-in-1 activities",
+        "Large splash pool (wet mode)",
+        "Climbing wall",
+        "Obstacle section",
+        "Cleaned & sanitized before every rental"
+      ],
+      "safetyNotes": "In wet mode: one rider at a time on slide. Ages 3+ only. Adult supervision required at all times.",
+      "colors": [
+        "Blue",
+        "Green",
+        "Red"
+      ]
+    },
+    {
+      "id": "bab-dunk-tank",
+      "companyId": "bay-area-bounce",
+      "name": "Dunk Tank",
+      "slug": "dunk-tank-bab",
+      "category": "Games",
+      "themes": [
+        "Games",
+        "Carnival",
+        "Competition",
+        "Summer",
+        "Corporate"
+      ],
+      "description": "The crowd favorite at any event! Our 500-gallon dunk tank delivers big laughs and big splashes. Dare your boss, teacher, or friends to sit in the hot seat — then let the balls fly! Includes 3 throwing balls. A hit at school carnivals, company picnics, and block parties. Requires 8ft width and 20ft throwing area.",
+      "dimensions": "8ft wide x 7ft tall (20ft throwing area)",
+      "capacity": 1,
+      "ageRange": "All ages",
+      "setupTime": 30,
+      "price": 469,
+      "images": [
+        "https://images.unsplash.com/photo-1519455953755-af066f52f1a6?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "500-gallon water tank",
+        "3 throwing balls included",
+        "Easy fill & drain valve",
+        "Powder-coated steel frame",
+        "Cleaned & sanitized before every rental"
+      ],
+      "safetyNotes": "Person in seat must be a strong swimmer or wear flotation device. Seat weight limit 250 lbs. Supervise young children near open water.",
+      "colors": [
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "id": "bab-snow-cone-machine",
+      "companyId": "bay-area-bounce",
+      "name": "Snow Cone Machine",
+      "slug": "snow-cone-machine-bab",
+      "category": "Concessions",
+      "themes": [
+        "Concessions",
+        "Food",
+        "Carnival",
+        "Summer"
+      ],
+      "description": "Keep guests cool with freshly shaved snow cones! Our commercial-grade snow cone machine comes with 50 servings of flavored syrups in assorted flavors: cherry, grape, blue raspberry, watermelon, and lemon-lime. Easy to operate and a huge hit on hot summer days. Great add-on with any bounce house or water slide rental.",
+      "dimensions": "18in x 18in x 36in",
+      "capacity": 0,
+      "ageRange": "All ages",
+      "setupTime": 10,
+      "price": 69,
+      "images": [
+        "https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "Commercial-grade shaved ice machine",
+        "50 servings included",
+        "5 assorted flavors",
+        "Cups and spoon-straws included",
+        "Cleaned before rental"
+      ],
+      "safetyNotes": "Keep machine away from water and flammable materials. Adult operation recommended. Blade is sharp — keep children away from the ice chamber.",
+      "colors": [
+        "Red",
+        "White"
+      ]
+    },
+    {
+      "id": "bab-popcorn-machine",
+      "companyId": "bay-area-bounce",
+      "name": "Popcorn Machine",
+      "slug": "popcorn-machine-bab",
+      "category": "Concessions",
+      "themes": [
+        "Concessions",
+        "Food",
+        "Carnival",
+        "Snacks"
+      ],
+      "description": "Add the smell and taste of fresh popcorn to your event! Our commercial-grade 8oz kettle popcorn machine makes delicious, buttery popcorn in minutes. Comes with 50 servings of all-in-one popcorn kits (kernels, oil, and seasoning pre-packaged). Plug in and serve within 5 minutes. Pairs great with a dunk tank or cotton candy machine.",
+      "dimensions": "24in x 18in x 48in",
+      "capacity": 0,
+      "ageRange": "All ages",
+      "setupTime": 10,
+      "price": 79,
+      "images": [
+        "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "Commercial-grade 8oz kettle",
+        "50 servings included",
+        "Bags included",
+        "Easy plug-and-go operation",
+        "Cleaned before rental"
+      ],
+      "safetyNotes": "Keep away from flammable materials. Kettle becomes very hot — adult operation only. Do not leave unattended.",
+      "colors": [
+        "Red",
+        "Chrome"
+      ]
+    },
+    {
+      "id": "bab-tent-10x10",
+      "companyId": "bay-area-bounce",
+      "name": "10x10 Pop Up Tent",
+      "slug": "10x10-pop-up-tent-bab",
+      "category": "Tents",
+      "themes": [
+        "Shade",
+        "Outdoor",
+        "Events"
+      ],
+      "description": "Keep guests comfortable in the shade with this quick-setup 10x10 pop-up canopy tent. Commercial-grade frame with white canopy top. Sets up in minutes without any tools. Great for individual vendor booths, food stations, or shaded rest areas. Can be combined with sidewalls for added wind and sun protection.",
+      "dimensions": "10ft x 10ft",
+      "capacity": 10,
+      "ageRange": "All ages",
+      "setupTime": 15,
+      "price": 89,
+      "images": [
+        "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "Commercial-grade frame",
+        "White canopy top",
+        "Quick pop-up setup",
+        "Stake and weight compatible"
+      ],
+      "safetyNotes": "Do not use in winds over 25mph. Must be staked or weighted on all corners.",
+      "colors": [
+        "White"
+      ]
+    },
+    {
+      "id": "bab-tent-20x20",
+      "companyId": "bay-area-bounce",
+      "name": "20x20 Canopy Tent",
+      "slug": "20x20-canopy-tent-bab",
+      "category": "Tents",
+      "themes": [
+        "Shade",
+        "Outdoor",
+        "Events",
+        "Party"
+      ],
+      "description": "Provide shade and shelter for up to 40 guests with this spacious 20x20 canopy tent. Perfect for backyard parties, outdoor receptions, school events, and corporate gatherings. Commercial-grade frame with white canopy top. Sidewalls available upon request for additional wind and sun protection.",
+      "dimensions": "20ft x 20ft",
+      "capacity": 40,
+      "ageRange": "All ages",
+      "setupTime": 45,
+      "price": 199,
+      "images": [
+        "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "Commercial-grade frame",
+        "White canopy top",
+        "Fits up to 40 people",
+        "Sidewalls available"
+      ],
+      "safetyNotes": "Do not use in winds over 25mph. Must be staked or weighted on all corners.",
+      "colors": [
+        "White"
+      ]
+    },
+    {
+      "id": "bab-tables-chairs",
+      "companyId": "bay-area-bounce",
+      "name": "Tables & Chairs Package (8 Tables / 64 Chairs)",
+      "slug": "tables-chairs-package-bab",
+      "category": "Tables & Chairs",
+      "themes": [
+        "Events",
+        "Party",
+        "Seating"
+      ],
+      "description": "Everything you need to seat your guests! This package includes 8 folding 6-foot rectangular tables and 64 matching folding chairs — perfect for parties up to 64 people. Tables seat 8 comfortably. Chairs are sturdy white plastic folding chairs. Bundle with a tent for the complete outdoor setup. Contact us for custom quantities.",
+      "dimensions": "6ft tables, standard chairs",
+      "capacity": 64,
+      "ageRange": "All ages",
+      "setupTime": 30,
+      "price": 139,
+      "images": [
+        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop"
+      ],
+      "available": true,
+      "features": [
+        "8 folding tables (6ft)",
+        "64 folding chairs",
+        "White chairs",
+        "Clean and inspected"
+      ],
+      "safetyNotes": "Max weight per chair 250 lbs. Do not stand on tables or chairs.",
+      "colors": [
+        "White"
+      ]
+    }
+  ],
+  "meta": {
+    "siteSlug": "bay-area-bounce",
+    "crawledAt": null,
+    "sourceUrl": "https://bayareabounce.com",
+    "note": "Backfilled from src/lib/data.ts by export_existing_to_parsed.js",
+    "urlsDiscovered": 0,
+    "inventoryUrls": 18,
+    "infoUrls": 0,
+    "pagesFetched": 0,
+    "errors": 0
+  },
+  "errors": []
+}
