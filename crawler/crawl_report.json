@@ -1,0 +1,92 @@
+{
+  "database": "/home/user/PlayBase/crawler/kidzzstar.db",
+  "succeeded": [],
+  "failed": [
+    {
+      "url": "https://kidzzstarjumpers.com/sitemap.xml",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/sitemap_index.xml",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/page-sitemap.xml",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/about/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/contact/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/faq/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/safety/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/service-area/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/rentals/moonwalks/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/rentals/water-rides/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/rentals/slides-combos/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/rentals/obstacle-courses/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/rentals/games/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/rentals/concessions/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/rentals/tents/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/rentals/tables-chairs/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/rentals/equipment/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/rentals/accessories/",
+      "reason": "Max retries exceeded"
+    },
+    {
+      "url": "https://kidzzstarjumpers.com/rentals/",
+      "reason": "Max retries exceeded"
+    }
+  ],
+  "counts": {
+    "inventory": 0,
+    "categories": 0,
+    "service_areas": 0,
+    "pages": 0
+  }
+}
