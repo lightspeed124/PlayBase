@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getListings, getDistinctCategories } from "@/lib/data";
 import ItemCard from "@/components/ItemCard";
 import HeroSearch from "@/components/HeroSearch";
+import CityRentalsBanner from "@/components/CityRentalsBanner";
 
 export default async function HomePage() {
   const [allItems, categories] = await Promise.all([
@@ -29,7 +30,7 @@ export default async function HomePage() {
       <section className="relative h-[66vh] min-h-[520px] overflow-hidden">
         {/* Illustrated background scene */}
         <Image
-          src="/hero-bg.svg"
+          src="/landing page background.png"
           alt="Kids having a blast in a bounce house on a sunny day"
           fill
           className="object-cover object-center"
@@ -54,7 +55,7 @@ export default async function HomePage() {
           </div>
 
           {/* Search bar */}
-          <div className="w-full max-w-3xl">
+          <div className="w-full max-w-5xl px-4">
             <HeroSearch />
           </div>
 
@@ -69,6 +70,13 @@ export default async function HomePage() {
           </p>
         </div>
       </section>
+
+      {/* ── City rentals band ─────────────────────────────────────────────── */}
+      <div className="border-t border-b border-gray-200 bg-white py-5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <CityRentalsBanner />
+        </div>
+      </div>
 
       {/* ── Category rows ─────────────────────────────────────────────────── */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
