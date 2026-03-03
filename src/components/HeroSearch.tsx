@@ -7,60 +7,56 @@ export default function HeroSearch() {
   const router = useRouter();
   const [keyword, setKeyword] = useState("");
   const [city, setCity] = useState("");
-  const [date, setDate] = useState("");
 
   function handleSearch(e: React.FormEvent) {
     e.preventDefault();
     const params = new URLSearchParams();
     if (keyword.trim()) params.set("q", keyword.trim());
     if (city.trim()) params.set("city", city.trim());
-    if (date) params.set("date", date);
     router.push(`/browse?${params.toString()}`);
   }
 
   return (
-    <form onSubmit={handleSearch}>
-      <div className="bg-white rounded-2xl shadow-xl p-4 max-w-3xl mx-auto space-y-3">
-        {/* Keyword row — full width, prominent */}
-        <div className="flex items-center gap-2 border border-gray-200 rounded-xl px-4 py-3 focus-within:border-indigo-400 focus-within:ring-2 focus-within:ring-indigo-100">
-          <span className="text-gray-400 text-lg">🔍</span>
+    <form onSubmit={handleSearch} className="w-full">
+      <div className="flex items-center bg-white rounded-full shadow-2xl border border-white/30 overflow-hidden max-w-2xl mx-auto">
+        {/* What */}
+        <div className="flex-1 px-6 py-4 min-w-0">
+          <div className="text-[11px] font-bold text-gray-900 mb-0.5">What</div>
           <input
             type="text"
             value={keyword}
             onChange={(e) => setKeyword(e.target.value)}
-            placeholder="Search bounce houses, water slides, princess theme, popcorn machine…"
-            className="flex-1 outline-none text-gray-800 text-sm placeholder-gray-400 bg-transparent"
+            placeholder="Bounce house, princess theme, water slide…"
+            className="w-full outline-none text-gray-700 text-sm placeholder-gray-400 bg-transparent truncate"
           />
         </div>
 
-        {/* City + date + search button row */}
-        <div className="flex flex-col sm:flex-row gap-3">
-          <div className="flex-1 flex items-center gap-2 border border-gray-200 rounded-xl px-4 py-3 focus-within:border-indigo-400 focus-within:ring-2 focus-within:ring-indigo-100">
-            <span className="text-gray-400">📍</span>
-            <input
-              type="text"
-              value={city}
-              onChange={(e) => setCity(e.target.value)}
-              placeholder="Delivery city (e.g. Palo Alto)"
-              className="flex-1 outline-none text-gray-800 text-sm placeholder-gray-400 bg-transparent"
-            />
-          </div>
+        {/* Divider */}
+        <div className="w-px h-8 bg-gray-200 shrink-0" />
 
-          <div className="flex-1 flex items-center gap-2 border border-gray-200 rounded-xl px-4 py-3 focus-within:border-indigo-400 focus-within:ring-2 focus-within:ring-indigo-100">
-            <span className="text-gray-400">📅</span>
-            <input
-              type="date"
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
-              className="flex-1 outline-none text-gray-800 text-sm bg-transparent"
-            />
-          </div>
+        {/* Where */}
+        <div className="flex-1 px-6 py-4 min-w-0">
+          <div className="text-[11px] font-bold text-gray-900 mb-0.5">Where</div>
+          <input
+            type="text"
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+            placeholder="City (e.g. Palo Alto)"
+            className="w-full outline-none text-gray-700 text-sm placeholder-gray-400 bg-transparent"
+          />
+        </div>
 
+        {/* Search button */}
+        <div className="pr-3 shrink-0">
           <button
             type="submit"
-            className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-xl text-sm transition-colors whitespace-nowrap"
+            className="bg-rose-500 hover:bg-rose-600 text-white rounded-full w-12 h-12 flex items-center justify-center transition-colors shadow-sm"
+            aria-label="Search"
           >
-            Search
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
           </button>
         </div>
       </div>
