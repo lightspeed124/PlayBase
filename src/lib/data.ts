@@ -118,7 +118,7 @@ export async function getListings(filters: ListingFilters = {}): Promise<RentalI
     query = query.in("business_site", sites);
   }
 
-  query = query.order("title").limit(filters.limit ?? 200);
+  query = query.order("title").limit(filters.limit ?? 1000);
   const { data, error } = await query;
   if (error) { console.error("getListings:", error.message); return []; }
   return data as RentalItem[];
