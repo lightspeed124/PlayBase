@@ -1,4 +1,4 @@
-const KEY = "playbase_favorites";
+const KEY = "jumpfun_favorites";
 
 export function getFavorites(): string[] {
   if (typeof window === "undefined") return [];
