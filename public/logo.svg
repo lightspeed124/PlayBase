@@ -1,26 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 52" width="220" height="52">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 150">
   <defs>
-    <style>
-      .logo-text {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-        font-size: 40px;
-        font-weight: 900;
-        letter-spacing: -1px;
-      }
-    </style>
+    <!-- Pink/coral dot pattern -->
+    <pattern id="dp" patternUnits="userSpaceOnUse" width="11" height="11">
+      <rect width="11" height="11" fill="#F2BEBE"/>
+      <circle cx="5.5" cy="5.5" r="2.4" fill="#CC5858"/>
+    </pattern>
+    <!-- Sky blue dot pattern -->
+    <pattern id="db" patternUnits="userSpaceOnUse" width="11" height="11">
+      <rect width="11" height="11" fill="#A8D8F0"/>
+      <circle cx="5.5" cy="5.5" r="2.4" fill="#4898C8"/>
+    </pattern>
+    <!-- Gold/yellow dot pattern -->
+    <pattern id="dg" patternUnits="userSpaceOnUse" width="11" height="11">
+      <rect width="11" height="11" fill="#F0D890"/>
+      <circle cx="5.5" cy="5.5" r="2.4" fill="#C08820"/>
+    </pattern>
   </defs>
-  <!-- J -->
-  <text class="logo-text" x="0"   y="42" fill="#FF3B5C">J</text>
-  <!-- u -->
-  <text class="logo-text" x="26"  y="42" fill="#FF7A00">u</text>
-  <!-- m -->
-  <text class="logo-text" x="49"  y="42" fill="#FFD600">m</text>
-  <!-- p -->
-  <text class="logo-text" x="80"  y="42" fill="#00C851">p</text>
-  <!-- F -->
-  <text class="logo-text" x="104" y="42" fill="#00B4FF">F</text>
-  <!-- u -->
-  <text class="logo-text" x="129" y="42" fill="#7B5CF5">u</text>
-  <!-- n -->
-  <text class="logo-text" x="152" y="42" fill="#FF3B5C">n</text>
+
+  <style>
+    .t {
+      font-family: 'Arial Black', Impact, 'Helvetica Neue', Arial, sans-serif;
+      font-size: 108px;
+      font-weight: 900;
+    }
+  </style>
+
+  <!-- Drop shadow layer (rendered first = behind everything) -->
+  <g transform="translate(5,6)">
+    <text class="t" x="14" y="114">
+      <tspan fill="#5C2800" opacity="0.45">J</tspan><tspan fill="#5C1010" opacity="0.45">U</tspan><tspan fill="#103050" opacity="0.45">M</tspan><tspan fill="#5C1010" opacity="0.45">P</tspan><tspan fill="#5C2800" opacity="0.45">F</tspan><tspan fill="#5C1010" opacity="0.45">U</tspan><tspan fill="#5C1010" opacity="0.45">N</tspan>
+    </text>
+  </g>
+
+  <!-- Outer thick colored strokes (neon tube outline effect) -->
+  <text class="t" x="14" y="114" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <tspan stroke="#D89A20" stroke-width="13">J</tspan><tspan stroke="#D85858" stroke-width="13">U</tspan><tspan stroke="#4888C0" stroke-width="13">M</tspan><tspan stroke="#D85858" stroke-width="13">P</tspan><tspan stroke="#D89A20" stroke-width="13">F</tspan><tspan stroke="#D85858" stroke-width="13">U</tspan><tspan stroke="#D85858" stroke-width="13">N</tspan>
+  </text>
+
+  <!-- Main body: dot pattern fill + medium stroke (stroke drawn behind fill) -->
+  <text class="t" x="14" y="114" paint-order="stroke" stroke-linecap="round" stroke-linejoin="round">
+    <tspan fill="url(#dp)" stroke="#D89A20" stroke-width="5">J</tspan><tspan fill="url(#db)" stroke="#D85858" stroke-width="5">U</tspan><tspan fill="url(#dp)" stroke="#4888C0" stroke-width="5">M</tspan><tspan fill="url(#dp)" stroke="#D85858" stroke-width="5">P</tspan><tspan fill="url(#dg)" stroke="#D89A20" stroke-width="5">F</tspan><tspan fill="url(#dp)" stroke="#D85858" stroke-width="5">U</tspan><tspan fill="url(#dp)" stroke="#D85858" stroke-width="5">N</tspan>
+  </text>
+
+  <!-- Inner bright highlight stroke (gives the neon glow / inner tube look) -->
+  <text class="t" x="14" y="114" fill="none">
+    <tspan stroke="#FAE8B0" stroke-width="2.5">J</tspan><tspan stroke="#FAD0D0" stroke-width="2.5">U</tspan><tspan stroke="#C0E8FF" stroke-width="2.5">M</tspan><tspan stroke="#FAD0D0" stroke-width="2.5">P</tspan><tspan stroke="#FAE8A0" stroke-width="2.5">F</tspan><tspan stroke="#FAD0D0" stroke-width="2.5">U</tspan><tspan stroke="#FAD0D0" stroke-width="2.5">N</tspan>
+  </text>
 </svg>

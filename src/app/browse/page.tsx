@@ -129,7 +129,7 @@ export default async function BrowsePage({
 
         {/* ── Sidebar ── */}
         <aside className="lg:w-60 shrink-0">
-          <div className="sticky top-24 space-y-7">
+          <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-7 pr-1">
 
             {/* Category */}
             <div>

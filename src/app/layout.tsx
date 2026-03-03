@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "PlayBase — Book Bounce Houses & Party Rentals",
+  title: "JumpFun — Book Bounce Houses & Party Rentals",
   description:
     "Find and book bounce houses, water slides, combos, and party rentals from top-rated local companies. Instant booking, transparent pricing, delivered to your door.",
 };
@@ -23,7 +23,7 @@ export default function RootLayout({
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-2xl">🎪</span>
-                <span className="text-white font-bold text-lg">PlayBase</span>
+                <span className="text-white font-bold text-lg">JumpFun</span>
               </div>
               <p className="text-sm text-gray-400">
                 Your marketplace for bounce houses and party rentals from top-rated local companies.
@@ -49,7 +49,7 @@ export default function RootLayout({
             <div>
               <h4 className="text-white font-semibold mb-3 text-sm">Company</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white">About PlayBase</a></li>
+                <li><a href="#" className="hover:text-white">About JumpFun</a></li>
                 <li><a href="#" className="hover:text-white">List Your Company</a></li>
                 <li><a href="#" className="hover:text-white">Safety Standards</a></li>
                 <li><a href="#" className="hover:text-white">Contact Us</a></li>
@@ -58,7 +58,7 @@ export default function RootLayout({
           </div>
           <div className="border-t border-gray-800">
             <div className="max-w-7xl mx-auto px-4 py-4 text-center text-sm text-gray-500">
-              © 2025 PlayBase. All rights reserved.
+              © 2025 JumpFun. All rights reserved.
             </div>
           </div>
         </footer>

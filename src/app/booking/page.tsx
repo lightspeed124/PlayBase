@@ -71,8 +71,8 @@ function BookingForm() {
       submittedAt: new Date().toISOString(), status: "pending",
     };
     try {
-      const existing = JSON.parse(localStorage.getItem("playbase_bookings") || "[]") as Booking[];
-      localStorage.setItem("playbase_bookings", JSON.stringify([...existing, booking]));
+      const existing = JSON.parse(localStorage.getItem("jumpfun_bookings") || "[]") as Booking[];
+      localStorage.setItem("jumpfun_bookings", JSON.stringify([...existing, booking]));
     } catch { /**/ }
     setBookingId(id);
     setSubmitted(true);
