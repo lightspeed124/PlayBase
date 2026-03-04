@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { fetchCitySuggestions, CitySuggestion } from "@/lib/geo";
 import { useCity } from "@/context/CityContext";
 
-export default function CityRentalsBanner() {
+export default function NavCityPicker() {
   const router = useRouter();
   const { city, loading, setCity } = useCity();
   const [editing, setEditing] = useState(false);
@@ -68,26 +68,20 @@ export default function CityRentalsBanner() {
   }
 
   return (
-    <div ref={containerRef} className="relative flex items-center justify-center gap-3 flex-wrap">
-      <span className="text-gray-700 font-medium text-base">
-        Rentals near
-      </span>
-
+    <div ref={containerRef} className="relative hidden md:flex items-center">
       {editing ? (
-        <span className="relative inline-block">
-          <span className="inline-flex items-center border-2 border-indigo-500 rounded-lg px-4 py-1.5">
-            <input
-              ref={inputRef}
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              onKeyDown={handleKeyDown}
-              placeholder="Enter city…"
-              className="outline-none text-indigo-600 font-semibold text-base bg-transparent w-40"
-            />
-          </span>
-
+        <span className="relative inline-flex items-center border border-indigo-400 rounded-full px-3 py-1 bg-white">
+          <span className="text-gray-400 text-xs mr-1.5">📍</span>
+          <input
+            ref={inputRef}
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            onKeyDown={handleKeyDown}
+            placeholder="Enter city…"
+            className="outline-none text-indigo-600 font-semibold text-sm bg-transparent w-28"
+          />
           {suggestions.length > 0 && (
-            <ul className="absolute left-0 top-full mt-1 w-72 bg-white rounded-2xl shadow-xl border border-gray-100 z-50 overflow-hidden">
+            <ul className="absolute left-0 top-full mt-1 w-64 bg-white rounded-2xl shadow-xl border border-gray-100 z-50 overflow-hidden">
               {suggestions.map((s, i) => (
                 <li
                   key={i}
@@ -110,18 +104,17 @@ export default function CityRentalsBanner() {
           onClick={startEditing}
           disabled={loading}
           title="Click to change city"
-          className="inline-flex items-center gap-1.5 text-indigo-600 font-bold text-base border-b-2 border-dashed border-indigo-400 hover:border-indigo-600 hover:text-indigo-800 transition-colors disabled:opacity-40 pb-0.5"
+          className="inline-flex items-center gap-1 text-sm text-gray-600 hover:text-indigo-600 border border-gray-200 hover:border-indigo-300 rounded-full px-3 py-1.5 transition-colors disabled:opacity-40"
         >
+          <span className="text-xs">📍</span>
           {loading ? (
-            <span className="inline-block w-24 h-5 rounded bg-indigo-100 animate-pulse" />
+            <span className="inline-block w-16 h-3.5 rounded bg-gray-200 animate-pulse" />
           ) : (
-            <>
-              {city}
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-3.5 h-3.5">
-                <path d="M13.488 2.513a1.75 1.75 0 0 0-2.475 0L3.88 9.648a.75.75 0 0 0-.196.37l-.66 3a.75.75 0 0 0 .892.892l3-.66a.75.75 0 0 0 .37-.196l7.135-7.133a1.75 1.75 0 0 0 0-2.475l-.933-.933Z" />
-              </svg>
-            </>
+            <span className="font-medium max-w-[120px] truncate">{city}</span>
           )}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-3 h-3 text-gray-400">
+            <path d="M13.488 2.513a1.75 1.75 0 0 0-2.475 0L3.88 9.648a.75.75 0 0 0-.196.37l-.66 3a.75.75 0 0 0 .892.892l3-.66a.75.75 0 0 0 .37-.196l7.135-7.133a1.75 1.75 0 0 0 0-2.475l-.933-.933Z" />
+          </svg>
         </button>
       )}
     </div>

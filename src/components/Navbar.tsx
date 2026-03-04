@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import NavCityPicker from "@/components/NavCityPicker";
 
 export default function Navbar() {
   return (
@@ -23,6 +24,7 @@ export default function Navbar() {
             >
               AI Planner
             </Link>
+            <NavCityPicker />
             <Link
               href="/plan"
               className="text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-1.5 rounded-full transition-colors"
