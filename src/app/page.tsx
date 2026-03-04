@@ -29,7 +29,7 @@ export default async function HomePage() {
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative h-[66vh] min-h-[520px] overflow-hidden">
-        {/* Illustrated background scene */}
+        {/* Background scene — shown at full brightness */}
         <Image
           src="/landing page background.png"
           alt="Kids having a blast in a bounce house on a sunny day"
@@ -37,38 +37,37 @@ export default async function HomePage() {
           className="object-cover object-center"
           priority
         />
-        {/* Gradient overlay — light at top, heavier at bottom so text pops */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/15 to-black/70" />
+        {/* Very light veil so edges don't feel too raw */}
+        <div className="absolute inset-0 bg-white/10" />
 
-        <div className="relative h-full flex flex-col items-center justify-center px-4 text-center gap-7">
-          <div className="space-y-4">
-            <p className="text-white/80 text-[11px] font-bold tracking-[0.22em] uppercase">
+        <div className="relative h-full flex flex-col items-center justify-center px-4 text-center gap-6">
+          {/* ── Frosted glass card ── */}
+          <div className="bg-white/80 backdrop-blur-md rounded-3xl shadow-xl px-8 py-8 md:py-10 w-full max-w-2xl space-y-5">
+            <p className="text-indigo-500 text-[11px] font-bold tracking-[0.22em] uppercase">
               Bounce Houses &nbsp;·&nbsp; Water Slides &nbsp;·&nbsp; Obstacle Courses &nbsp;·&nbsp; Combo Jumpers
             </p>
-            <h1 className="text-4xl md:text-[54px] font-extrabold text-white leading-tight drop-shadow-lg">
+            <h1 className="text-4xl md:text-[50px] font-extrabold text-gray-900 leading-tight">
               More Bounce Houses,<br className="hidden sm:block" />
-              <span className="text-yellow-300"> Booked in Seconds.</span>
+              <span className="text-indigo-600"> Booked in Seconds.</span>
             </h1>
-            <p className="text-white/75 text-base md:text-lg font-medium max-w-xl mx-auto leading-relaxed">
+            <p className="text-gray-500 text-base md:text-lg font-medium leading-relaxed">
               Browse hundreds of bounce houses and inflatables near you —<br className="hidden md:block" />
               pick your favorite and book it in minutes.
             </p>
-          </div>
 
-          {/* Search bar */}
-          <div className="w-full max-w-5xl px-4">
+            {/* Search bar sits inside the card */}
             <HeroSearch />
-          </div>
 
-          <p className="text-sm text-white/65">
-            Not sure what to pick?{" "}
-            <Link
-              href="/plan"
-              className="text-yellow-300 font-semibold underline underline-offset-2 hover:text-yellow-200"
-            >
-              Try our free AI Planner →
-            </Link>
-          </p>
+            <p className="text-sm text-gray-400">
+              Not sure what to pick?{" "}
+              <Link
+                href="/plan"
+                className="text-indigo-600 font-semibold hover:text-indigo-500"
+              >
+                Try our free AI Planner →
+              </Link>
+            </p>
+          </div>
         </div>
       </section>
 
