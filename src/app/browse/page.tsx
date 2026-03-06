@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getListings, getCompanies, getDistinctCategories } from "@/lib/data";
 import ItemCard from "@/components/ItemCard";
 import BrowseSearch from "@/components/BrowseSearch";
+import BrowseSidebar from "@/components/BrowseSidebar";
 
 interface SearchParams {
   category?: string;
@@ -129,8 +130,8 @@ export default async function BrowsePage({
       <div className="flex flex-col lg:flex-row gap-8">
 
         {/* ── Sidebar ── */}
-        <aside className="lg:w-60 shrink-0">
-          <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-7 pr-1">
+        <BrowseSidebar>
+          <div>
 
             {/* Category */}
             <div>
@@ -243,7 +244,7 @@ export default async function BrowsePage({
               </Link>
             )}
           </div>
-        </aside>
+        </BrowseSidebar>
 
         {/* ── Results ── */}
         <div className="flex-1 min-w-0">

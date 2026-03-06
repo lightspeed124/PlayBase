@@ -85,7 +85,7 @@ export default function HomeHero() {
           <p className="text-white/85 text-[11px] font-bold tracking-[0.22em] uppercase drop-shadow">
             Bounce Houses &nbsp;·&nbsp; Water Slides &nbsp;·&nbsp; Obstacle Courses &nbsp;·&nbsp; Combo Jumpers
           </p>
-          <h1 className="text-4xl md:text-[54px] font-extrabold text-white leading-tight drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-[54px] font-extrabold text-white leading-tight drop-shadow-lg">
             More Bounce Houses,<br className="hidden sm:block" />
             <span className="text-yellow-300"> Booked in Seconds.</span>
           </h1>
