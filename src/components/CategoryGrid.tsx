@@ -9,7 +9,7 @@ const CATEGORY_META: Record<string, { image: string; description: string }> = {
     image: "PLACEHOLDER",
     description: "Classic inflatable castles for endless jumping fun",
   },
-  "Combo Bouncers": {
+  "Bounce & Slide Combo": {
     image: "PLACEHOLDER",
     description: "Bounce, slide, and climb all in one unit",
   },
@@ -33,36 +33,36 @@ const CATEGORY_META: Record<string, { image: string; description: string }> = {
     image: "PLACEHOLDER",
     description: "Soft, safe bouncing designed for little ones",
   },
-  "Dunk Tanks": {
+  "Water Games": {
     image: "PLACEHOLDER",
-    description: "The classic crowd-pleaser everyone loves",
+    description: "Dunk tanks and water games — a guaranteed crowd-pleaser",
   },
   "Concessions": {
     image: "PLACEHOLDER",
     description: "Popcorn, cotton candy, and snow cones for the party",
   },
-  "Tents": {
-    image: "PLACEHOLDER",
-    description: "Shade and shelter for any outdoor event",
-  },
   "Tables & Chairs": {
     image: "PLACEHOLDER",
     description: "Complete your setup with seating for all guests",
+  },
+  "Tents": {
+    image: "PLACEHOLDER",
+    description: "Shade and shelter for any outdoor event",
   },
 };
 
 const DISPLAY_ORDER = [
   "Bounce Houses",
-  "Combo Bouncers",
+  "Bounce & Slide Combo",
   "Water Slides",
   "Obstacle Courses",
   "Interactive Games",
   "Sports Games",
   "Toddler Units",
-  "Dunk Tanks",
+  "Water Games",
   "Concessions",
-  "Tents",
   "Tables & Chairs",
+  "Tents",
 ];
 
 // ─── Component ─────────────────────────────────────────────────────────────────
