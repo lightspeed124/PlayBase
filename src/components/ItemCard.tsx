@@ -39,24 +39,23 @@ export default function ItemCard({ item }: { item: RentalItem }) {
       </div>
 
       {/* Details */}
-      <div className="px-1">
-        <div className="flex justify-between items-start gap-2 mb-0.5">
-          <h3 className="font-semibold text-gray-900 text-sm leading-tight group-hover:text-brand-blue transition-colors line-clamp-2">
+      <div className="px-1 flex justify-between items-start gap-2">
+        <div className="min-w-0">
+          <h3 className="font-semibold text-gray-900 text-sm leading-tight group-hover:text-brand-blue transition-colors line-clamp-1">
             {item.title}
           </h3>
-          <div className="text-right shrink-0">
-            {price != null ? (
-              <>
-                <div className="text-base font-bold text-gray-900">${Math.round(price)}</div>
-                <div className="text-xs text-gray-500">/ day</div>
-              </>
-            ) : (
-              <div className="text-sm text-gray-400">Call for price</div>
-            )}
-          </div>
+          <p className="text-xs text-gray-500 truncate mt-0.5">{item.business_name}</p>
         </div>
-
-        <p className="text-xs text-gray-500 truncate">{item.business_name}</p>
+        <div className="text-right shrink-0">
+          {price != null ? (
+            <>
+              <div className="text-base font-bold text-gray-900">${Math.round(price)}</div>
+              <div className="text-xs text-gray-500">/ day</div>
+            </>
+          ) : (
+            <div className="text-sm text-gray-400">Call</div>
+          )}
+        </div>
       </div>
     </Link>
   );

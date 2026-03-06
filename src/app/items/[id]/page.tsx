@@ -152,8 +152,8 @@ export default async function ItemDetailPage({
           )}
         </div>
 
-        {/* ── Sidebar ── */}
-        <div className="lg:col-span-1">
+        {/* ── Sidebar (desktop only) ── */}
+        <div className="hidden lg:block lg:col-span-1">
           <div className="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 sticky top-24">
             {basePrice != null ? (
               <div className="flex items-baseline gap-1 mb-5">
@@ -195,6 +195,25 @@ export default async function ItemDetailPage({
           </div>
         </div>
       </div>
+
+      {/* ── Mobile sticky bottom bar ── */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-3 flex items-center gap-3 z-40">
+        <div className="flex-1 min-w-0">
+          {basePrice != null ? (
+            <div className="flex items-baseline gap-1">
+              <span className="text-xl font-bold text-gray-900">${Math.round(basePrice)}</span>
+              <span className="text-sm text-gray-500">/ day</span>
+            </div>
+          ) : (
+            <span className="text-sm text-gray-500">Contact for pricing</span>
+          )}
+        </div>
+        <BookNowButton itemId={String(listingId)} />
+        <FavoriteButton itemId={String(listingId)} size="md" />
+      </div>
+
+      {/* Spacer so content isn't hidden behind mobile bar */}
+      <div className="lg:hidden h-20" />
 
       {/* Row 1: Same company, complementary items */}
       {complementary.length > 0 && (

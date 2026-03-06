@@ -107,11 +107,11 @@ export default function FavoritesPage() {
                     </div>
                     <div className="flex flex-col gap-2 shrink-0">
                       <Link href={`/booking?from=${item.listing_id}`}
-                        className="text-xs bg-brand-blue hover:bg-brand-blue-dark text-white font-semibold px-3 py-2 rounded-lg transition-colors whitespace-nowrap">
+                        className="text-sm bg-brand-blue hover:bg-brand-blue-dark text-white font-semibold px-5 py-2 rounded-lg transition-colors whitespace-nowrap text-center">
                         Book
                       </Link>
                       <button onClick={() => handleRemove(item.listing_id)}
-                        className="text-xs text-red-400 hover:text-red-600 font-medium px-3 py-2 rounded-lg hover:bg-red-50 transition-colors whitespace-nowrap">
+                        className="text-xs text-red-400 hover:text-red-600 font-medium px-5 py-1 rounded-lg hover:bg-red-50 transition-colors whitespace-nowrap">
                         Remove
                       </button>
                     </div>

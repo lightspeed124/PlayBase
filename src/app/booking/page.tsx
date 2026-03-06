@@ -63,7 +63,7 @@ function BookingForm() {
     setWarningDismissed(false);
   }
 
-  function handleSubmit() {
+  async function handleSubmit() {
     const id = `PB-${Date.now().toString(36).toUpperCase()}`;
     const booking: Booking = {
       id, itemIds: selectedIds, eventDate, duration, setupType,
@@ -74,6 +74,11 @@ function BookingForm() {
       const existing = JSON.parse(localStorage.getItem("jumpfun_bookings") || "[]") as Booking[];
       localStorage.setItem("jumpfun_bookings", JSON.stringify([...existing, booking]));
     } catch { /**/ }
+    await fetch("/api/booking", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(booking),
+    });
     setBookingId(id);
     setSubmitted(true);
   }
@@ -291,7 +296,7 @@ function BookingForm() {
           )}
           <div className="flex justify-between">
             <button onClick={() => setStep(2)} className="text-sm text-gray-500 hover:text-gray-700 font-medium px-4 py-2 rounded-xl hover:bg-gray-100">← Back</button>
-            <button disabled={!contactName.trim() || !contactPhone.trim() || !contactEmail.trim()} onClick={handleSubmit}
+            <button disabled={!contactName.trim() || !contactPhone.trim() || !contactEmail.trim()} onClick={() => void handleSubmit()}
               className="bg-brand-blue hover:bg-brand-blue-dark disabled:bg-gray-300 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-xl transition-colors">
               Submit Booking Request
             </button>
