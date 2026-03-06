@@ -213,6 +213,17 @@ export async function getListingPrices(listingId: number): Promise<ListingPrice[
   return data as ListingPrice[];
 }
 
+export async function getFeaturedListings(): Promise<RentalItem[]> {
+  const { data: featured, error } = await supabase
+    .from("featured_listings")
+    .select("listing_id, display_order")
+    .order("display_order");
+  if (error || !featured?.length) return [];
+  const ids = featured.map((r: { listing_id: number }) => r.listing_id);
+  const items = await getListingsByIds(ids);
+  return ids.map((id) => items.find((i) => i.listing_id === id)).filter(Boolean) as RentalItem[];
+}
+
 export async function getListingsByIds(ids: number[]): Promise<RentalItem[]> {
   if (ids.length === 0) return [];
   const { data, error } = await supabase
