@@ -3,8 +3,8 @@ import Image from "next/image";
 import { getListings, getDistinctCategories } from "@/lib/data";
 import ItemCard from "@/components/ItemCard";
 import HeroSearch from "@/components/HeroSearch";
-import CityRentalsBanner from "@/components/CityRentalsBanner";
 import FavouritesRow from "@/components/FavouritesRow";
+import CityRentalsBanner from "@/components/CityRentalsBanner";
 
 export default async function HomePage() {
   const [allItems, categories] = await Promise.all([
@@ -83,6 +83,53 @@ export default async function HomePage() {
       {/* ── Category rows ─────────────────────────────────────────────────── */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
         <FavouritesRow />
+
+        {/* ── Categories ──────────────────────────────────────────────────── */}
+        <section>
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Browse by Category</h2>
+
+          {/* Featured category cards */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-4">
+            {[
+              { name: "Bounce Houses", icon: "🏠" },
+              { name: "Combo Bouncers (Bounce + Slide)", icon: "🎪" },
+              { name: "Water Slides", icon: "💦" },
+              { name: "Obstacle Courses", icon: "🏃" },
+              { name: "Interactive Inflatables", icon: "🎯" },
+              { name: "Toddler Inflatables", icon: "🐣" },
+            ].map(({ name, icon }) => {
+              const cat = categories.find((c) => c.category_name === name);
+              return (
+                <Link
+                  key={name}
+                  href={`/browse?category=${encodeURIComponent(name)}`}
+                  className="flex flex-col items-center gap-2 border border-gray-200 hover:border-brand-blue-border hover:bg-brand-blue-subtle rounded-2xl p-4 text-center transition-colors group"
+                >
+                  <span className="text-4xl">{icon}</span>
+                  <span className="text-sm font-semibold text-gray-800 group-hover:text-brand-blue leading-tight">{name}</span>
+                  {cat && <span className="text-xs text-gray-400">{cat.listing_count} rentals</span>}
+                </Link>
+              );
+            })}
+          </div>
+
+          {/* Other categories as tags */}
+          <div className="flex flex-wrap gap-2">
+            {categories
+              .filter((c) => !["Bounce Houses", "Combo Bouncers (Bounce + Slide)", "Water Slides", "Obstacle Courses", "Interactive Inflatables", "Toddler Inflatables"].includes(c.category_name))
+              .map((cat) => (
+                <Link
+                  key={cat.category_slug}
+                  href={`/browse?category=${encodeURIComponent(cat.category_name)}`}
+                  className="flex items-center gap-2 border border-gray-200 hover:border-brand-blue-border hover:bg-brand-blue-subtle rounded-full px-4 py-2 text-sm font-medium text-gray-700 hover:text-brand-blue transition-colors"
+                >
+                  {cat.category_name}
+                  <span className="text-xs text-gray-400">{cat.listing_count}</span>
+                </Link>
+              ))}
+          </div>
+        </section>
+
         {rows.map((row) => (
           <section key={row.category_slug}>
 
