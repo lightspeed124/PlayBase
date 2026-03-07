@@ -6,12 +6,48 @@ import Image from "next/image";
 import { getFavorites } from "@/lib/favorites";
 import type { RentalItem } from "@/types";
 
+/** Skeleton placeholder shown while favourites are loading */
+function FavouritesRowSkeleton({ count }: { count: number }) {
+  return (
+    <section>
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-2">
+          <span className="text-red-500 text-xl">&#9829;</span>
+          <div className="h-6 w-40 rounded bg-gray-200 animate-pulse" />
+        </div>
+        <div className="h-4 w-16 rounded bg-gray-200 animate-pulse" />
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {Array.from({ length: Math.min(count, 4) }).map((_, i) => (
+          <div
+            key={i}
+            className="flex items-center gap-4 bg-white border border-gray-100 rounded-2xl p-3"
+          >
+            <div className="w-20 h-20 rounded-xl bg-gray-200 animate-pulse shrink-0" />
+            <div className="flex-1 min-w-0 space-y-2">
+              <div className="h-3 w-16 rounded bg-gray-200 animate-pulse" />
+              <div className="h-4 w-full rounded bg-gray-200 animate-pulse" />
+              <div className="h-3 w-24 rounded bg-gray-200 animate-pulse" />
+            </div>
+            <div className="text-right shrink-0 space-y-1">
+              <div className="h-5 w-12 rounded bg-gray-200 animate-pulse ml-auto" />
+              <div className="h-3 w-8 rounded bg-gray-200 animate-pulse ml-auto" />
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default function FavouritesRow() {
   const [items, setItems] = useState<RentalItem[]>([]);
   const [loaded, setLoaded] = useState(false);
+  const [savedCount, setSavedCount] = useState(0);
 
   useEffect(() => {
     const ids = getFavorites();
+    setSavedCount(ids.length);
     if (ids.length === 0) { setLoaded(true); return; }
 
     fetch(`/api/listings?ids=${ids.join(",")}`)
@@ -25,18 +61,25 @@ export default function FavouritesRow() {
       .finally(() => setLoaded(true));
   }, []);
 
-  if (!loaded || items.length === 0) return null;
+  // No saved favourites — render nothing
+  if (loaded && items.length === 0) return null;
+
+  // Still loading but we know there are saved items — show skeleton
+  if (!loaded && savedCount > 0) return <FavouritesRowSkeleton count={savedCount} />;
+
+  // Not loaded and we don't know saved count yet — render nothing (first paint)
+  if (!loaded) return null;
 
   return (
     <section>
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <span className="text-red-500 text-xl">♥</span>
+          <span className="text-red-500 text-xl">&#9829;</span>
           <h2 className="text-xl font-bold text-gray-900">Your Saved Items</h2>
           <span className="text-sm text-gray-400 font-medium">({items.length})</span>
         </div>
         <Link href="/favorites" className="text-sm text-gray-400 hover:text-gray-700 font-medium transition-colors shrink-0">
-          View all →
+          View all &rarr;
         </Link>
       </div>
 
@@ -56,10 +99,9 @@ export default function FavouritesRow() {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   sizes="80px"
-                  unoptimized
                 />
               ) : (
-                <div className="w-full h-full flex items-center justify-center text-2xl">🎪</div>
+                <div className="w-full h-full flex items-center justify-center text-2xl">&#127914;</div>
               )}
             </div>
 

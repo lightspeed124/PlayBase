@@ -149,7 +149,7 @@ function BookingForm() {
                   <input type="checkbox" checked={checked} onChange={() => toggleItem(String(item.listing_id))} className="w-5 h-5 accent-brand-blue shrink-0" />
                   <div className="w-14 h-14 rounded-xl overflow-hidden bg-gray-100 relative shrink-0">
                     {item.primary_image_url
-                      ? <Image src={item.primary_image_url} alt={item.title} fill className="object-cover" sizes="56px" unoptimized />
+                      ? <Image src={item.primary_image_url} alt={item.title} fill className="object-cover" sizes="56px" />
                       : <div className="w-full h-full flex items-center justify-center text-2xl">🎪</div>}
                   </div>
                   <div className="flex-1 min-w-0">
@@ -266,7 +266,7 @@ function BookingForm() {
                 <div key={item.listing_id} className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg overflow-hidden bg-gray-200 relative shrink-0">
                     {item.primary_image_url
-                      ? <Image src={item.primary_image_url} alt={item.title} fill className="object-cover" sizes="40px" unoptimized />
+                      ? <Image src={item.primary_image_url} alt={item.title} fill className="object-cover" sizes="40px" />
                       : <div className="w-full h-full flex items-center justify-center">🎪</div>}
                   </div>
                   <div className="flex-1 min-w-0">

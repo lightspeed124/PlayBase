@@ -57,7 +57,7 @@ export default async function ItemDetailPage({
           <div className="grid grid-cols-2 gap-3 mb-8">
             <div className="col-span-2 relative h-96 rounded-2xl overflow-hidden bg-gray-100">
               {heroImg ? (
-                <Image src={heroImg} alt={item.title} fill className="object-contain" sizes="(max-width: 1024px) 100vw, 66vw" priority unoptimized />
+                <Image src={heroImg} alt={item.title} fill className="object-contain" sizes="(max-width: 1024px) 100vw, 66vw" priority />
               ) : (
                 <div className="w-full h-full flex items-center justify-center text-8xl bg-brand-blue-subtle">🎪</div>
               )}
@@ -67,7 +67,7 @@ export default async function ItemDetailPage({
             </div>
             {galleryImgs.map((img, i) => (
               <div key={i} className="relative h-48 rounded-2xl overflow-hidden bg-gray-100">
-                <Image src={img.image_url} alt={img.alt_text ?? item.title} fill className="object-cover" sizes="33vw" unoptimized />
+                <Image src={img.image_url} alt={img.alt_text ?? item.title} fill className="object-cover" sizes="33vw" />
               </div>
             ))}
           </div>

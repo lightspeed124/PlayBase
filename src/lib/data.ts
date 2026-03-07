@@ -70,6 +70,21 @@ export async function getBusinessSitesByCity(city: string): Promise<string[]> {
 
 // Maps verbose DB names → simplified display names shown everywhere in the UI.
 // Categories not listed here keep their DB name unchanged.
+// Canonical display order for categories, used everywhere in the UI.
+export const CATEGORY_DISPLAY_ORDER = [
+  "Bounce Houses",
+  "Bounce & Slide Combo",
+  "Water Slides",
+  "Obstacle Courses",
+  "Interactive Games",
+  "Sports Games",
+  "Toddler Units",
+  "Water Games",
+  "Concessions",
+  "Tables & Chairs",
+  "Tents",
+];
+
 const CATEGORY_DISPLAY_NAMES: Record<string, string> = {
   "Combo Bouncers (Bounce + Slide)":       "Bounce & Slide Combo",
   "Concessions & Equipment":               "Concessions",
@@ -108,8 +123,12 @@ export async function getDistinctCategories(): Promise<CategorySummary[]> {
     }
   }
   return [...map.values()]
-    .sort((a, b) => b.listing_count - a.listing_count)
-    .map((c) => ({ ...c, category_name: toDisplayName(c.category_name) }));
+    .map((c) => ({ ...c, category_name: toDisplayName(c.category_name) }))
+    .sort((a, b) => {
+      const ai = CATEGORY_DISPLAY_ORDER.indexOf(a.category_name);
+      const bi = CATEGORY_DISPLAY_ORDER.indexOf(b.category_name);
+      return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+    });
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

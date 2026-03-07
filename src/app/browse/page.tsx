@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getListings, getCompanies, getDistinctCategories } from "@/lib/data";
 import ItemCard from "@/components/ItemCard";
 import BrowseSearch from "@/components/BrowseSearch";
+import BrowseStickySearch from "@/components/BrowseStickySearch";
 import BrowseSidebar from "@/components/BrowseSidebar";
 
 interface SearchParams {
@@ -249,17 +250,26 @@ export default async function BrowsePage({
         {/* ── Results ── */}
         <div className="flex-1 min-w-0">
 
-          {/* Search bar */}
-          <div className="mb-5">
-            <BrowseSearch
-              initialQuery={q}
-              preserveParams={
-                Object.fromEntries(
-                  Object.entries(params as Record<string, string>).filter(([k]) => k !== "q")
-                )
-              }
-            />
-          </div>
+          {/* Search bar — wrapped for sticky behavior */}
+          <BrowseStickySearch
+            initialQuery={q}
+            preserveParams={
+              Object.fromEntries(
+                Object.entries(params as Record<string, string>).filter(([k]) => k !== "q")
+              )
+            }
+          >
+            <div className="mb-5">
+              <BrowseSearch
+                initialQuery={q}
+                preserveParams={
+                  Object.fromEntries(
+                    Object.entries(params as Record<string, string>).filter(([k]) => k !== "q")
+                  )
+                }
+              />
+            </div>
+          </BrowseStickySearch>
 
           {/* Header */}
           <div className="mb-4">
@@ -306,7 +316,7 @@ export default async function BrowsePage({
 
           {/* Grid */}
           {items.length > 0 && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-5">
               {items.map((item) => (
                 <ItemCard key={item.listing_id} item={item} />
               ))}

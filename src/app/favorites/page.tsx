@@ -83,7 +83,7 @@ export default function FavoritesPage() {
                     <Link href={`/items/${item.listing_id}`} className="shrink-0">
                       <div className="w-20 h-20 rounded-xl overflow-hidden bg-gray-100 relative">
                         {item.primary_image_url ? (
-                          <Image src={item.primary_image_url} alt={item.title} fill className="object-cover" sizes="80px" unoptimized />
+                          <Image src={item.primary_image_url} alt={item.title} fill className="object-cover" sizes="80px" />
                         ) : (
                           <div className="w-full h-full flex items-center justify-center text-3xl">🎪</div>
                         )}

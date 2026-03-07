@@ -308,8 +308,7 @@ function ResultCard({ scored }: { scored: ScoredItem }) {
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
             style={{ filter: "saturate(1.08) contrast(1.04) brightness(1.02)" }}
-            sizes="(max-width: 768px) 100vw, 33vw"
-            unoptimized
+            sizes="(max-width: 768px) 50vw, 33vw"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-5xl bg-brand-blue-subtle">🎪</div>

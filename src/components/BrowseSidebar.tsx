@@ -7,7 +7,7 @@ export default function BrowseSidebar({ children }: { children: React.ReactNode 
   const [open, setOpen] = useState(false);
 
   return (
-    <aside className="lg:w-60 shrink-0">
+    <aside className="lg:w-60 shrink-0 lg:self-start lg:sticky lg:top-6">
       {/* Mobile toggle */}
       <button
         onClick={() => setOpen((o) => !o)}
@@ -22,7 +22,7 @@ export default function BrowseSidebar({ children }: { children: React.ReactNode 
 
       {/* Sidebar content */}
       <div className={`${open ? "block" : "hidden"} lg:block`}>
-        <div className="lg:sticky lg:top-24 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto space-y-7 pr-1">
+        <div className="lg:max-h-[calc(100vh-3rem)] lg:overflow-y-auto space-y-7 pr-1">
           {children}
         </div>
       </div>

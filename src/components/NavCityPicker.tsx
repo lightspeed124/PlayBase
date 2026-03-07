@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { fetchCitySuggestions, CitySuggestion } from "@/lib/geo";
 import { useCity } from "@/context/CityContext";
 
-export default function NavCityPicker() {
+export default function NavCityPicker({ className = "" }: { className?: string }) {
   const router = useRouter();
   const { city, loading, setCity } = useCity();
   const [editing, setEditing] = useState(false);
@@ -68,7 +68,7 @@ export default function NavCityPicker() {
   }
 
   return (
-    <div ref={containerRef} className="relative hidden md:flex items-center">
+    <div ref={containerRef} className={`relative flex items-center ${className}`}>
       {editing ? (
         <span className="relative inline-flex items-center border border-brand-blue-border rounded-full px-3 py-1 bg-white">
           <span className="text-gray-400 text-xs mr-1.5">📍</span>

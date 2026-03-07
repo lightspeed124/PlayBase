@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { CategorySummary } from "@/types";
+import { CATEGORY_DISPLAY_ORDER } from "@/lib/data";
 
 // ─── Static catalog per category ──────────────────────────────────────────────
 
@@ -26,7 +27,7 @@ const CATEGORY_META: Record<string, { image: string; description: string }> = {
     description: "Carnival-style games and attractions for all ages",
   },
   "Sports Games": {
-    image: "/Sports Games.png",
+    image: "/Sports Games.webp",
     description: "Giant basketball, football, and competitive fun",
   },
   "Toddler Units": {
@@ -34,44 +35,33 @@ const CATEGORY_META: Record<string, { image: string; description: string }> = {
     description: "Soft, safe bouncing designed for little ones",
   },
   "Water Games": {
-    image: "/Water Games.jpg",
+    image: "/Water Games.webp",
     description: "Dunk tanks and water games — a guaranteed crowd-pleaser",
   },
   "Concessions": {
-    image: "/Concessions.png",
+    image: "/Concessions.webp",
     description: "Popcorn, cotton candy, and snow cones for the party",
   },
   "Tables & Chairs": {
-    image: "/Tables & Chairs.png",
+    image: "/Tables & Chairs.webp",
     description: "Complete your setup with seating for all guests",
   },
   "Tents": {
-    image: "/Tents.png",
+    image: "/Tents.webp",
     description: "Shade and shelter for any outdoor event",
   },
 };
 
-const DISPLAY_ORDER = [
-  "Bounce Houses",
-  "Bounce & Slide Combo",
-  "Water Slides",
-  "Obstacle Courses",
-  "Interactive Games",
-  "Sports Games",
-  "Toddler Units",
-  "Water Games",
-  "Concessions",
-  "Tables & Chairs",
-  "Tents",
-];
+const DISPLAY_ORDER = CATEGORY_DISPLAY_ORDER;
 
 // ─── Component ─────────────────────────────────────────────────────────────────
 
 interface Props {
   categories: CategorySummary[];
+  totalCount?: number;
 }
 
-export default function CategoryGrid({ categories }: Props) {
+export default function CategoryGrid({ categories, totalCount }: Props) {
   // Build a lookup map from the live DB data
   const dbMap = new Map(categories.map((c) => [c.category_name, c]));
 
@@ -113,7 +103,6 @@ export default function CategoryGrid({ categories }: Props) {
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   style={{ filter: "saturate(1.08) contrast(1.04) brightness(1.02)" }}
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                  unoptimized
                 />
               ) : (
                 <div className="w-full h-full flex items-center justify-center text-5xl bg-brand-blue-subtle">
@@ -140,6 +129,19 @@ export default function CategoryGrid({ categories }: Props) {
             </div>
           </Link>
         ))}
+
+        {/* 12th card — fills the empty grid spot */}
+        <Link href="/browse" className="group block">
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-brand-blue-subtle flex flex-col items-center justify-center gap-2 border-2 border-dashed border-brand-blue/20 group-hover:border-brand-blue/40 group-hover:bg-brand-blue/10 transition-all duration-200">
+            <div className="w-12 h-12 rounded-full bg-brand-blue/10 group-hover:bg-brand-blue/20 flex items-center justify-center transition-colors duration-200">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-brand-blue">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </div>
+            <span className="text-sm font-bold text-brand-blue">Explore All</span>
+            <span className="text-xs text-gray-400">{totalCount}+ rentals</span>
+          </div>
+        </Link>
       </div>
     </section>
   );

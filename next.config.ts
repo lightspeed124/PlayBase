@@ -7,6 +7,14 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "kidzzstarjumpers.com",
+      },
+      {
+        protocol: "https",
+        hostname: "rental.software",
+      },
     ],
   },
 };

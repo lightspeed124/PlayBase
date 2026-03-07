@@ -18,8 +18,7 @@ export default function ItemCard({ item }: { item: RentalItem }) {
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
             style={{ filter: "saturate(1.08) contrast(1.04) brightness(1.02)" }}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            unoptimized
+            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-5xl bg-brand-blue-subtle">
